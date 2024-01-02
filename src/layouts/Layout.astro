@@ -1,7 +1,9 @@
 ---
 import i18next, { t } from "i18next";
-import { LanguageSelector, Trans } from "astro-i18next/components";
 import { HeadHrefLangs } from 'astro-i18next/components';
+
+import Header from "../components/Header.astro";
+
 interface Props {
 	title: string;
 }
@@ -22,19 +24,8 @@ const { title } = Astro.props;
 		<HeadHrefLangs />
 	</head>
 	<body>
-		<h1>{t("home.title")}</h1>
-		<p>
-		  <Trans i18nKey="home.subtitle">
-			This is a <em>more complex</em> string to translate, mixed with <strong
-			  >html elements
-			</strong> such as <a href="https://example.com/">a cool link</a>!
-		  </Trans>
-		</p>
-		<LanguageSelector
-  			showFlag={true}
-  			aria-label="Select language"
-  			class="my-select-class"
-		/>
+		<Header />
+		<slot />
 	  </body>
 </html>
 <style is:global>

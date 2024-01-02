@@ -1,10 +1,41 @@
 {
     "site": {
-      "title": "My awesome website!",
-      "description": "Here is the description of my awesome website!"
+      "title": "World Seafood Industry 2024",
+      "description": "World Seafood Industry will be a showcase for wholesalers and retailers in various segments, such as systems and technology, as well as fishing and aquaculture equipment."
     },
     "home": {
       "title": "Welcome to my awesome website!",
       "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+    },
+    "menu":{
+      "option1":{
+        "title" : "ABOUT US",
+        "subMenu" : {
+          "option1" : "About World Seafood Industry",
+          "option2" : "About IGECO"
+        }
+      },
+      "option2": {
+          "title":"EXHIBITORS",
+          "subMenu": {
+              "option1":"Contact",                
+              "option2":"Exhibitor profile",
+              "option3":"Why exhibit",
+              "option4":"Services to exhibitors",
+              "option5":"Factsheet WSI 2024",
+              "option6":"Floor Plan WSI 2024",
+              "option7":"WSI Contract 2024",
+              "option8":"Rates",               
+              "option9":"Toolkit"
+          }
+      },        
+      "option3":{
+          "title":"VISITORS",
+          "subMenu":{
+              "option1":"Why go to WSI 2024",
+              "option2":"Visitor Profile"
+          }
+      },
+      "gallery": "GALLERY"     
     }
   }

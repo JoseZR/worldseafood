@@ -1,10 +1,41 @@
 {
     "site": {
-      "title": "¡Mi increíble sitio web!",
-      "description": "¡Aquí está la descripción de mi increíble sitio web!"
+      "title": "World Seafood Industry 2024",
+      "description": "World Seafood Industry será un destacado escaparate para mayoristas y minoristas en diversos segmentos, como sistemas y tecnología, así como equipos de pesca y acuicultura."
     },
     "home": {
       "title": "¡Bienvenido a mi increíble sitio web!",
       "subtitle": "Esta es una cadena <0>más compleja</0> para traducir, mezclada con <1>elementos html</1>, como un <2>un enlace interesante</2>."
+    },
+    "menu":{
+      "option1":{
+        "title" : "QUIÉNES SOMOS",
+        "subMenu" : {
+          "option1" : "Acerca de World Seafood Industry",
+          "option2" : "Acerca de IGECO"
+        }
+      },
+      "option2": {
+          "title":"EXPOSITORES",
+          "subMenu": {
+              "option1":"Contacto",                
+              "option2":"Perfil de Expositor",
+              "option3":"Por qué exponer",
+              "option4":"Servicios a expositores",
+              "option5":"Factsheet WSI 2024",
+              "option6":"Plano WSI 2024",
+              "option7":"Contrato WSI 2024",
+              "option8":"Tarifas",               
+              "option9":"Toolkit"
+          }
+      },        
+      "option3":{
+          "title":"VISITANTES",
+          "subMenu":{
+              "option1":"Por qué asistir a WSI 2024",
+              "option2":"Perfil de visitante"
+          }
+      },
+      "gallery": "GALERÍA"     
     }
   }
