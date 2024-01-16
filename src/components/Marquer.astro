@@ -1,0 +1,146 @@
+---
+interface Props {
+  partners: Array<{
+    link: string;
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  }>;
+  title: string;
+}
+
+const { partners, title } = Astro.props as Props;
+---
+
+<section id="suscribe" class="container mx-auto enable-animation">
+  <p class="text-center font-extrabold text-3xl m-10">{title}</p>
+  <div class="marquee marquee--hover-pause">
+    <div class="bg-gradient-left"></div>
+    <div class="bg-gradient-right"></div>
+    <ul class="marquee__content">
+      {
+        partners?.map((partner) => (
+          <li>
+            <a
+              href={partner.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={partner.alt}
+            >
+              <img
+                src={partner.src}
+                alt={partner.alt}
+                width={partner.width}
+                height={partner.height}
+                loading="lazy"
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <ul class="marquee__content">
+      {
+        partners?.map((partner) => (
+          <li>
+            <a
+              href={partner.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={partner.alt}
+            >
+              <img
+                src={partner.src}
+                alt={partner.alt}
+                width={partner.width}
+                height={partner.height}
+                loading="lazy"
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+<style>
+  .marquee {
+    --gap: 3rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+  }
+
+  .bg-gradient-left {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .bg-gradient-right {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    min-width: 100%;
+  }
+
+  .marquee__content img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .marquee__content img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__content {
+      animation-play-state: paused !important;
+    }
+  }
+
+  .enable-animation .marquee__content {
+    animation: scroll 35s linear infinite;
+  }
+
+  .marquee--hover-pause:hover .marquee__content {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-abs {
+    from {
+      transform: translateX(calc(100% + var(--gap)));
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+</style>
