@@ -58,6 +58,14 @@
       "platinum_partners":"Platinum Media Partners",
       "gold_partners":"Gold Media Partners"
     },
+    "about":{
+      "description1":"A pesar de contar con varios factores que juegan a su favor, México aún tiene una gran oportunidad para potenciar la producción acuícola y de pesca del país.",
+      "description2":"El territorio mexicano tiene casi 10 mil kilómetros de litorales, de los cuales se extraen más de 600 especies de pescados y mariscos con fines comerciales. Ante ello, la transformación tecnológica y la innovación en los procesos de la acuicultura y pesca sin duda nos permitirá sacar provecho de las oportunidades del mercado y maximizar la capacidad de producción para aprovechar los grandes recursos naturales con que contamos para así avanzar hacia una industria más sostenible.",
+      "description3":"World Seafood Industry, presentada por Italian German Exhibition Company Mexico, es la exposición diseñada para mostrar las últimas tendencias y las soluciones más innovadoras, así como facilitar el acceso a las tecnologías que serán clave para garantizar mayor eficiencia y seguridad en una de las industrias que cobrará mayor fuerza y relevancia en los próximos años.",
+      "description4":"En su segunda edición, del 15 al 17 de mayo, en Expo Guadalajara, WSI servirá como escaparate para los principales mayoristas y minoristas en distintos segmentos incluyendo: sistemas y tecnología, equipos de pesca, acuicultura, procesos de preparación y envasado de alimentos, distribución y logística, productos del mar para mayoreo, así como sostenibilidad y servicios generales.",
+      "invitation1":"¡LOS ESPERAMOS EN",
+      "invitation2":"WORLD SEAFOOD INDUSTRY 2024!"
+    },
     "footer":{
       "privacy_policy": "Privacy Policy",
       "contact": "Contacto"
