@@ -9,28 +9,27 @@ changeLanguage("es");
   <div class="container mx-auto m-10">
     <div class="flex flex-wrap items-center justify-center lg:px-24 mb-12">
       <div class="w-full p-4">
+        <img
+          src={i18next.language === "es"
+            ? "/worldseafood/img/world_seafood_es.jpg"
+            : "/worldseafood/img/world_seafood_en.jpg"}
+          class="w-100"
+          alt=""
+        />
+      </div>
+      <div class="w-full p-4">
         <p class="text-4xl uppercase font-bold text-violet-700 mb-6">
           World Seafood Industry
         </p>
         <p class="text-xl text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          laudantium ipsam nemo facere veniam harum a, repudiandae consequuntur
-          exercitationem perspiciatis! Saepe porro neque distinctio praesentium
-          possimus ad, rem nam asperiores velit, accusamus, voluptas debitis
-          deserunt. Reiciendis vero corrupti ullam, neque aliquid velit deserunt
-          a. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit laudantium ipsam nemo facere veniam harum a, repudiandae
-          consequuntur exercitationem perspiciatis! Saepe porro neque distinctio
-          praesentium possimus ad, rem nam asperiores velit, accusamus, voluptas
-          debitis deserunt. Reiciendis vero corrupti ullam, neque aliquid velit
-          deserunt a
+          {t("about.description1")} <br><br>
+          {t("about.description2")} <br><br>
+          {t("about.description3")} <br><br>
+          {t("about.description4")} <br><br>
         </p>
       </div>
-      <div class="w-full p-4">
-        <img src="/worldseafood/img/seafood_3.webp" alt="Imagen" />
-      </div>
       <p class="text-6xl uppercase font-bold text-violet-700 mb-6 p-8 ">
-        ¡Los esperamos en <br> World Seafood Industry 2024!
+        {t("about.invitation1")} <br> {t("about.invitation2")}
       </p>
     </div>
     <!-- <div class="flex flex-wrap items-center justify-center lg:px-24">
