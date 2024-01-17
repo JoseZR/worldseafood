@@ -66,6 +66,54 @@
       "invitation1":"¡WE EXPECT YOU IN",
       "invitation2":"WORLD SEAFOOD INDUSTRY 2024!"
     },
+    "exhibitor-profile":{
+      "title":"Profile Exhibitor",
+      "description1":"<strong>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
+      "topic1":{
+        "title":"Aquaculture, fishing",
+        "sub_title":"AND AQUAPONICS TECHNOLOGY",
+        "item1":"Manufacturers of aquaculture and fishing equipment",
+        "item2":"Research equipment",
+        "item3":"Software and intelligent systems",
+        "item4":"Aquaculture and fishing equipment manufacturers",
+        "item5":"Innovations",
+        "item6":"Scientific and technological innovations"
+      },
+      "topic2":{
+        "title":"Transformation and processing",
+        "item1":"Producers",
+        "item2":"Harvesting and production tools",
+        "item3":"Vessels and marine technology",
+        "item4":"Tanks",
+        "item5":"Feed for harvesting",
+        "item6":"Water treatment products",
+        "item7":"Probiotics, vaccines and fish care products"
+      },
+      "topic3":{
+        "title":"Distribution and logistics",
+        "item1":"Seafood packaging and containers",
+        "item2":"Logistics and transportation",
+        "item3":"Distributors",
+        "item4":"Wholesale and retail distribution networks"
+      },
+      "topic4":{
+        "title":"Specialized services",
+        "item1":"Financial support",
+        "item2":"International trade services",
+        "item3":"Security equipment",
+        "item4":"Cargo insurance",
+        "item5":"Consulting",
+        "item6":"Certifications",
+        "item7":"Tagged",
+        "item8":"Governmental and non-governmental organizations"
+      },
+      "topic5":{
+        "title":"Retail and wholesale products",
+        "item1":"End products",
+        "item2":"Seafood traders"
+      }
+
+    },
     "footer":{
         "title": "Sales Contact",
         "event_date": "May 15 to 17 2024 <br />Expo Guadalajara Jalisco",

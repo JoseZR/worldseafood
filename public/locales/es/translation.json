@@ -66,6 +66,55 @@
       "invitation1":"¡LOS ESPERAMOS EN",
       "invitation2":"WORLD SEAFOOD INDUSTRY 2024!"
     },
+    
+    "exhibitor-profile":{
+      "title":"Perfil del Expositor",
+      "description1":"<strong>World Seafood Industry </strong> alienta a los profesionales de la industria a exhibir sus productos e innovaciones en esta plataforma internacional de la pesca y acuicultura, que incluye los siguientes segmentos:",
+      "topic1":{
+        "title":"Tecnología para la acuicultura",
+        "sub_title":"PESCA Y ACUAPONÍA",
+        "item1":"Fabricantes de equipos de acuicultura y pesca",
+        "item2":"Equipo para investigación",
+        "item3":"Software y sistemas inteligentes",
+        "item4":"Fabricantes de equipos de acuicultura y pesca",
+        "item5":"Innovaciones",
+        "item6":"Innovaciones científicas y tecnológicas"
+      },
+      "topic2":{
+        "title":"Transformación y procesamiento",
+        "item1":"Productores",
+        "item2":"Herramientas para la cosecha y producción",
+        "item3":"Embarcaciones y tecnología marina",
+        "item4":"Tanques",
+        "item5":"Alimento para cosecha",
+        "item6":"Tratamiento de agua",
+        "item7":"Probióticos, vacunas y productos para cuidado"
+      },
+      "topic3":{
+        "title":"Distribución y logística",
+        "item1":"Empaques y envases para mariscos",
+        "item2":"Logística y transporte",
+        "item3":"Distribuidores",
+        "item4":"Redes de distribución mayorista y minorista"
+      },
+      "topic4":{
+        "title":"Servicios especializados",
+        "item1":"Apoyos financieros",
+        "item2":"Servicios de comercio internacional",
+        "item3":"Equipos de seguridad",
+        "item4":"Seguros de mercancías",
+        "item5":"Consultoría",
+        "item6":"Certificaciones",
+        "item7":"Etiquetados",
+        "item8":"Organizaciones gubernamentales y no gubernamentales"
+      },
+      "topic5":{
+        "title":"Productos para mercado mayorista",
+        "item1":"Productos finales",
+        "item2":"Comercializadores de productos del mar"
+      }
+
+    },
     "footer":{
       "title": "Sales Contact",
       "event_date": "May 15 to 17 2024 <br />Expo Guadalajara Jalisco",
