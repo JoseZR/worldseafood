@@ -57,5 +57,9 @@
       "desc_topic7":"World Seafood Industry invites industry professionals, distributors and buyer groups to attend the fair.",
       "platinum_partners":"Platinum Media Partners",
       "gold_partners":"Gold Media Partners"
+    },
+    "footer":{
+        "privacy_policy": "Privacy Policy",
+        "contact": "Contact"
     }
   }
