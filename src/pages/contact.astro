@@ -1,31 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { t, changeLanguage } from "i18next";
-import { ContactForm } from "../components/ContactForm.jsx";
 
 changeLanguage("es");
 ---
 
 <Layout title="Contact Agrotech">
-  <section class="bg-gray-800">
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <i class="text-white">AgroTech México</i>
-      <p class="mb-4 text-4xl tracking-tight font-extrabold text-white">
-        {t("contact.title")}
-      </p>
-      <p class="text-white" set:html={t("contact.description")} />
-      <ContactForm
-        name={t("contact.form.name")}
-        subject={t("contact.form.subject")}
-        message={t("contact.form.message")}
-        send={t("contact.form.send")}
-        client:visible
-      />
-      <p class="text-white text-center mt-10 text-lg">
-        <strong>IGECO</strong><br /> Blvd. Francisco Villa 102, piso 14<br />
-         Col. Oriental 37510<br /> León Guanajuato, México <br />
-         www.igeco.mx
-      </p>
-    </div>
+  <section class="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, voluptatum suscipit saepe beatae fugit nobis, natus magnam incidunt non dignissimos architecto nulla, modi optio nemo aperiam tempora eum voluptatem vitae velit placeat obcaecati? Porro iure unde ipsa distinctio quas nisi, ducimus quam possimus deserunt autem.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </section>
 </Layout>
