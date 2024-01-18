@@ -1,11 +1,70 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("en");
 ---
 
 <Layout title="">
-    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga perspiciatis modi ex?</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laudantium sequi aliquam reiciendis similique illum assumenda soluta quos rem tempore quam, pariatur, et eaque ea eligendi nostrum officia commodi, nisi alias iste aperiam provident quibusdam voluptate eum? Architecto recusandae quae, quidem harum asperiores similique animi.</p>
+ <section class="background">
+    <p class="text-4xl text-center uppercase font-bold text-white pt-14 pb-12">
+        {t("why-exhibit.title")}
+      </p>
+      <div class="p-8">
+        <div class="flex lg:flex-row flex-col items-center justify-center gap-4 lg:px-14">
+          <div
+            class="w-full sm:w-1/4 p-4 order-2 lg:order-1 bg-violet-700 lg:h-[210px] hover:bg-violet-500 bg-opacity-50 flex items-center justify-center " 
+          > <p class="text-center text-xl text-white" set:html={t("why-exhibit.item1")}></p>
+          </div>
+          <div
+            class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 flex items-center justify-center"
+          ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item2")}></p>
+          </div>
+          <div
+            class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 bg-opacity-50 flex items-center justify-center"
+          ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item3")}></p>
+          </div>
+          <div
+            class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 flex items-center justify-center"
+          ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item4")}></p>
+          </div>
+        </div>
+        <div class="flex lg:flex-row flex-col items-center justify-center gap-4 lg:px-14 my-4">
+            <div
+              class="w-full sm:w-1/4 p-4 order-2 lg:order-1 bg-violet-700 lg:h-[210px] hover:bg-violet-500 flex items-center justify-center " 
+            > <p class="text-center text-xl text-white" set:html={t("why-exhibit.item5")}></p>
+            </div>
+            <div
+              class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 bg-opacity-50 flex items-center justify-center"
+            ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item6")}></p>
+            </div>
+            <div
+              class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 flex items-center justify-center"
+            ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item7")}></p>
+            </div>
+            <div
+              class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 bg-opacity-50 flex items-center justify-center"
+            ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item8")}></p>
+            </div>
+          </div>
+          <div class="flex lg:flex-row flex-col items-center justify-center gap-4 lg:px-14 my-4">
+            <div
+              class="w-full sm:w-1/4 p-4 order-2 lg:order-1 bg-violet-700 lg:h-[210px] hover:bg-violet-500 flex items-center justify-center " 
+            > <p class="text-center text-xl text-white" set:html={t("why-exhibit.item9")}></p>
+            </div>
+            <div
+              class="w-full sm:w-1/4 p-4 order-1 lg:order-2 bg-violet-700 lg:h-[210px] hover:bg-violet-500 bg-opacity-50 flex items-center justify-center"
+            ><p class="text-center text-xl text-white" set:html={t("why-exhibit.item10")}></p>
+            </div>
+          </div>
+      </div>
+ </section>
+ <style>
+    .background{
+        background-image: url('/worldseafood/img/background-1.png');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+ </style>
 </Layout>
