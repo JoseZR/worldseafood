@@ -113,7 +113,51 @@
         "item1":"Productos finales",
         "item2":"Comercializadores de productos del mar"
       }
-
+    },
+    "why-exhibit":{
+      "title":"10 razones para ser expositor en WSI",
+      "item1":"<strong>Conecta </strong> con más de 5,000 compradores líderes y de alto poder adquisitivo del sector pesquero y acuícola en América Latina.",
+      "item2":"<strong>Genera </strong> ventas a través del encuentro de negocios B2B más importante de la región.",
+      "item3":"<strong>Obtén </strong> una visión general del sector, encuentra nuevos mercados y oportunidades de negocio.",
+      "item4":"<strong>Encuentra nuevos aliados, </strong> distribuidores, agentes y fortalece tu red comercial. ",
+      "item5":"<strong>Lanza tus productos, </strong> servicios o innovaciones a través del robusto programa de conferencias y talleres.",
+      "item6":"<strong>Fortalece </strong> la visibilidad de tu marca, compañía o productos a través de WSI, la plataforma más importante para presentar innovaciones y tendencias del sector. ",
+      "item7":"<strong>Crea </strong> relaciones con medios de comunicación y benefíciate de la campaña de mercadotecnia del evento.",
+      "item8":"<strong>Evalúa posibilidades </strong> de exportación a través de nuestra delegación de compradores internacionales.",
+      "item9":"<strong>Sé parte de los eventos </strong> de contacto e intercambio de conocimiento entre pares.",
+      "item710":"<strong>Obtén información valiosa </strong> de tus productos o servicios en los encuentros uno a uno con los visitantes a tu stand."
+  },
+    "exhibitor-services":{
+      "title":"Exhibitor services",
+      "item1":"BANQUET KIT 2023",
+      "item2":"GENERAL EXHIBITOR CONTRACTING FORMAT",
+      "item3":"FOOD AND BEVERAGE PROCUREMENT FORM",
+      "item4":"BOARDING INSTRUCTIONS"
+    },
+    "rates":{
+      "title":"Tarifas para World Seafood Industry 2024",
+      "topic1": {
+        "title":"Espacio libre",
+        "price1":"A partir de 18 m2 MXN 2,950.00 m2 + IVA"
+      },
+      "topic2": {
+        "title":"Precios de preventa",
+        "price1":"del 15 de Mayo al 31 de Agosto"
+      },
+      "topic3": {
+        "title":"Espacio Equipado",
+        "price1":"A partir de 18 m2 MXN 3,300.00 m2 + IVA"
+      },
+      "topic4": {
+        "title":"ESPACIO LIBRE",
+        "price1":"Desde 18 m2 MXN 3,150.00 m2 + IVA",
+        "description":"Incluye: Gafetes, boletos visitantes y mención en el directorio de expositores."
+      },
+      "topic5": {
+        "title":"STAND EQUIPADO 9 M2",
+        "price1":"Hasta 18 m2 MXN 3,500.00 m2 + IVA",
+        "description":"Incluye: Gafete, boleto de visitantes, mención en el directorio de expositores, alfombra, mamparas, rótulo de vinilo, amueblado y contacto eléctrico 110v."
+      }
     },
     "footer":{
       "title": "Sales Contact",

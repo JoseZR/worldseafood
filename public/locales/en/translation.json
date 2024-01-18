@@ -112,7 +112,51 @@
         "item1":"End products",
         "item2":"Seafood traders"
       }
-
+    },
+    "why-exhibit":{
+        "title":"10 reasons to be an exhibitor at WSI",
+        "item1":"<strong>Connect </strong> with more than 5,000 leading buyers and high purchasing power in the fisheries and aquaculture sector in Latin America.",
+        "item2":"<strong>Generate </strong> sales through the most important B2B business meeting in the region.",
+        "item3":"<strong>Get </strong> an overview of the sector, find new markets and business opportunities.",
+        "item4":"<strong>Find new </strong> partners, distributors, agents and strengthen your commercial network.",
+        "item5":"<strong>Launch your products </strong> services or innovations through the robust program of conferences and workshops. ",
+        "item6":"<strong>Strengthen </strong> the visibility of your brand, company or products through WSI, the most important platform to present innovations and trends in the industry.",
+        "item7":"<strong>Build </strong> relationships with the media and benefit from the event's marketing campaign.",
+        "item8":"<strong>Evaluate </strong> export possibilities through our delegation of international buyers.",
+        "item9":"<strong>Be part </strong> of peer-to-peer networking and knowledge exchange events.",
+        "item710":"<strong>Obtain valuable </strong> information about your products or services in one-on-one meetings with visitors to your booth."
+    },
+    "exhibitor-services":{
+      "title":"Exhibitor services",
+      "item1":"BANQUET KIT 2023",
+      "item2":"GENERAL EXHIBITOR CONTRACTING FORMAT",
+      "item3":"FOOD AND BEVERAGE PROCUREMENT FORM",
+      "item4":"BOARDING INSTRUCTIONS"
+    },
+    "rates":{
+      "title":"Rates for World Seafood Industry 2024",
+      "topic1": {
+        "title":"Raw Space",
+        "price1":"From 18 m2 MXN 2,950.00 m2 + VAT"
+      },
+      "topic2": {
+        "title":"EARLY BIRD RATES",
+        "price1":"May 15 to August 31"
+      },
+      "topic3": {
+        "title":"Shell Scheme",
+        "price1":"From 18 m2 MXN 3,300.00 m2 + VAT"
+      },
+      "topic4": {
+        "title":"RAW SPACE",
+        "price1":"From 18 m2 MXN 3,150.00 m2 + VAT",
+        "description":"Includes: Exhibitor badges and mention in the directory."
+      },
+      "topic5": {
+        "title":"SHELL SCHEME",
+        "price1":"Up to 18 sqm MXN 3,500.00/sqm + VAT",
+        "description":"Includes: Standard carpet, dividing partitions, vinyl sign, lighting, standard furniture, 110v electrical contact, exhibitor badges and mention in the directory."
+      }
     },
     "footer":{
         "title": "Sales Contact",
