@@ -182,7 +182,9 @@ const base =
               </li>
               <li>
                 <a
-                  href={`${base}/`}
+                  href={i18next.language === 'en'
+                  ? '/worldseafood/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf'
+                  : '/worldseafood/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf'}
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option6")}</a
