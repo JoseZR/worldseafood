@@ -129,10 +129,11 @@
   },
     "exhibitor-services":{
       "title":"Exhibitor services",
-      "item1":"BANQUET KIT 2023",
-      "item2":"GENERAL EXHIBITOR CONTRACTING FORMAT",
-      "item3":"FOOD AND BEVERAGE PROCUREMENT FORM",
-      "item4":"BOARDING INSTRUCTIONS"
+      "item1":"KIT BANQUETES 2023",
+      "item2":"FORMATO GENERAL DE CONTRATACIÓN A EXPOSITORES",
+      "item3":"FORMATO DE CONTRATACIÓN DE ALIMENTOS Y BEBIDAS",
+      "item4":"INSTRUCCIONES DE EMBARQUE",
+      "button":"Leer más"
     },
     "rates":{
       "title":"Tarifas para World Seafood Industry 2024",
