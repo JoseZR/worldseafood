@@ -138,25 +138,37 @@
       "title":"Tarifas para World Seafood Industry 2024",
       "topic1": {
         "title":"Espacio libre",
-        "price1":"A partir de 18 m2 MXN 2,950.00 m2 + IVA"
+        "price":"A partir de 18 m2 MXN 2,950.00 m2 + IVA"
       },
       "topic2": {
         "title":"Precios de preventa",
-        "price1":"del 15 de Mayo al 31 de Agosto"
+        "price":"del 15 de Mayo al 31 de Agosto"
       },
       "topic3": {
         "title":"Espacio Equipado",
-        "price1":"A partir de 18 m2 MXN 3,300.00 m2 + IVA"
+        "price":"A partir de 18 m2 MXN 3,300.00 m2 + IVA"
       },
       "topic4": {
-        "title":"ESPACIO LIBRE",
-        "price1":"Desde 18 m2 MXN 3,150.00 m2 + IVA",
-        "description":"Incluye: Gafetes, boletos visitantes y mención en el directorio de expositores."
+        "title":"Espacio Libre",
+        "space":"Desde 18 m2",
+        "price":"MXN 3,150.00 m2  <br> + IVA",
+        "titie2":"Incluye",
+        "includ1":"Gafetes.",
+        "includ2":"Boletos visitantes.",
+        "includ3":"Mención en el directorio de expositores."
       },
       "topic5": {
-        "title":"STAND EQUIPADO 9 M2",
-        "price1":"Hasta 18 m2 MXN 3,500.00 m2 + IVA",
-        "description":"Incluye: Gafete, boleto de visitantes, mención en el directorio de expositores, alfombra, mamparas, rótulo de vinilo, amueblado y contacto eléctrico 110v."
+        "title":"Stand Equipado 9m2",
+        "space":"Hasta 18 m2",
+        "price":"MXN 3,500.00 m2 + IVA",
+        "titie2":"Incluye",
+        "includ1":"Gafete.",
+        "includ2":"Boleto de visitantes.",
+        "includ3":"Mención en el directorio de expositores.",
+        "includ4":"Alfombra.",
+        "includ5":"Mamparas.",
+        "includ6":"Rótulo de vinilo.",
+        "includ7":"Amueblado y contacto eléctrico 110v."
       }
     },
     "footer":{

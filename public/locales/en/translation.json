@@ -138,25 +138,36 @@
       "title":"Rates for World Seafood Industry 2024",
       "topic1": {
         "title":"Raw Space",
-        "price1":"From 18 m2 MXN 2,950.00 m2 + VAT"
+        "price":"From 18 m2 MXN 2,950.00 m2 + VAT"
       },
       "topic2": {
         "title":"EARLY BIRD RATES",
-        "price1":"May 15 to August 31"
+        "price":"May 15 to August 31"
       },
       "topic3": {
         "title":"Shell Scheme",
-        "price1":"From 18 m2 MXN 3,300.00 m2 + VAT"
+        "price":"From 18 m2 MXN 3,300.00 m2 + VAT"
       },
       "topic4": {
         "title":"RAW SPACE",
-        "price1":"From 18 m2 MXN 3,150.00 m2 + VAT",
-        "description":"Includes: Exhibitor badges and mention in the directory."
+        "space":"From 18 m2",
+        "price":"MXN 3,150.00 m2 + VAT",
+        "titie2":"Includes",
+        "includ1":"Exhibitor badges.",
+        "includ2":"Mention in the directory."
       },
       "topic5": {
         "title":"SHELL SCHEME",
-        "price1":"Up to 18 sqm MXN 3,500.00/sqm + VAT",
-        "description":"Includes: Standard carpet, dividing partitions, vinyl sign, lighting, standard furniture, 110v electrical contact, exhibitor badges and mention in the directory."
+        "space":"Up to 18 sqm",
+        "price":"MXN 3,500.00/sqm + VAT",
+        "titie2":"Includes",
+        "includ1":" Standard carpet.",
+        "includ2":"Dividing partitions.",
+        "includ3":"Vinyl sign.",
+        "includ4":"Lighting.",
+        "includ5":"Standard furniture.",
+        "includ6":"110v electrical contact.",
+        "includ7":"Exhibitor badges and mention in the directory."
       }
     },
     "footer":{
