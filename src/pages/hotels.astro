@@ -8,10 +8,10 @@ changeLanguage("es");
 
 <Layout title='Agrotech | Special hotels rates'>
   <div class='mt-5 mb-5 container mx-auto'>
-    <h1 class='font-bold text-3xl'>{t('hotels.title')}</h1>
-    <p class='mt-3' set:html={t('hotels.description')} />
-    <section class='mt-5 hotels'>
-      <div class='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+    <h1 class='font-bold text-3xl mx-12'>{t('hotels.title')}</h1>
+    <p class='mt-3 mx-12' set:html={t('hotels.description')} />
+    <section class='mt-5 mx-36 hotels'>
+      <div class='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
         {
           hotels.map((hotel) => (
             <div class='max-w-sm bg-white border border-gray-200 rounded-lg shadow '>
@@ -94,7 +94,7 @@ changeLanguage("es");
         }
       </div>
     </section>
-    <section class='mt-5'>
+    <section class='mt-5 mx-12'>
       <h2 class='font-bold text-2xl'>{t('hotels.about_gdl')}</h2>
       <p class='mt-3' set:html={t('hotels.description_gdl')} />
       <h2 class='mt-5 font-bold text-2xl'>{t('hotels.restaurants')}</h2>
