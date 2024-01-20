@@ -1,0 +1,13 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("en");
+---
+<Layout title="">
+    <p
+    class="text-4xl text-center uppercase font-bold text-violet-700 pt-14 pb-4"
+  >
+    {t("visitor-profile.title")}
+  </p>
+</Layout>
