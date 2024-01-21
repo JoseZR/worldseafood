@@ -4,10 +4,52 @@ import { t, changeLanguage } from "i18next";
 
 changeLanguage("en");
 ---
+
 <Layout title="">
-    <p
-    class="text-4xl text-center uppercase font-bold text-violet-700 pt-14 pb-4"
+  <p
+    class="font-bold text-4xl text-center uppercase text-violet-700 pt-14 pb-4"
   >
     {t("why-attend.title")}
   </p>
+  <p class="lg:mx-14 m-8 text-xl" set:html={t("why-attend.description1")} />
+  <section>
+    <div
+      class="flex lg:flex-row flex-col items-center justify-center gap-4 lg:px-14 my-4"
+    >
+      <div class="w-full sm:w-1/2 p-4 ">
+        <ul>
+          <li class="p-2" set:html={t("why-attend.item1")} />
+          <li class="p-2" set:html={t("why-attend.item2")} />
+          <li class="p-2" set:html={t("why-attend.item3")} />
+          <li class="p-2" set:html={t("why-attend.item4")} />
+          <li class="p-2" set:html={t("why-attend.item5")} />
+        </ul>
+      </div> 
+      <div class="w-full sm:w-1/2 p-4">
+        <img
+          src="/worldseafood/img/worldseafood_why-attend_1.webp"
+          alt="worldseafood-why-attend"
+        />
+      </div>
+    </div>
+    <div
+      class="flex lg:flex-row flex-col items-center justify-center gap-4 lg:px-14 my-4"
+    >
+      <div class="w-full sm:w-1/2 p-4 lg:order-1 order-2">
+        <img
+          src="/worldseafood/img/worldseafood_why-attend_2.webp"
+          alt="worldseafood-why-attend"
+        />
+      </div>
+      <div class="w-full sm:w-1/2 p-4 order-1">
+        <ul>
+          <li class="p-2" set:html={t("why-attend.item6")} />
+          <li class="p-2" set:html={t("why-attend.item7")} />
+          <li class="p-2" set:html={t("why-attend.item8")} />
+          <li class="p-2" set:html={t("why-attend.item9")} />
+          <li class="p-2" set:html={t("why-attend.item10")} />
+        </ul>
+      </div>
+    </div>
+  </section>
 </Layout>
