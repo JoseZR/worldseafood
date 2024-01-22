@@ -42,7 +42,7 @@ export function Suscribe({ description, suscribe_label, button}){
     <section
         className="p-4 sm:p-6 lg:p-8"
         aria-label="Subscribe to the Flowbite newsletter">
-        <p className="mb-5 text-lg text-left font-medium text-white">
+        <p className="mb-5 text-lg lg:text-left text-center font-medium text-white">
             {description}
         </p>
         <div className="container mx-auto">
