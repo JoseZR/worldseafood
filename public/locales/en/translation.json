@@ -67,6 +67,17 @@
       "invitation1":"¡WE EXPECT YOU IN",
       "invitation2":"WORLD SEAFOOD INDUSTRY 2024!"
     },
+    "contact":{
+      "title":"Contact",
+      "description":"To know more about WorldSeafood 2024, contact us!",
+        "form":{
+          "name":"Name",
+          "email":"Your email",
+          "subject":"Subject",
+          "message":"Your message",
+          "send":"Send Message"
+      }   
+    },
     "exhibitor-profile":{
       "title":"Profile Exhibitor",
       "description1":"<strong>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
