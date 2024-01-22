@@ -37,9 +37,6 @@
     },
     "home": {
       "title": "SOBRE WORLD SEAFOOD MEXICO",
-      "item2":"Reporte de Resultados 2024",
-      "item3":"Contrato WSI 2024",
-      "item4":"Floor Plan 2024",
       "description1": "Mexico’s dynamic and competitive fishing and aquaculture sector has a specialized business platform in this field: World Seafood Industry (WSI), the international B2B fishing and aquaculture pavilion in Mexico, which arrives in 2023 with an exhibition designed to meet the specific needs of the region.",
       "description2": "WSI will serve as a showcase for leading wholesalers and retailers in different segments including systems and technology, fishing equipment, aquaculture, food preparation and packaging processes, distribution and logistics, wholesale seafood, as well as sustainability and general services.",
       "title_topic1": "Ally",
@@ -59,7 +56,10 @@
       "platinum_partners":"Platinum Media Partners",
       "gold_partners":"Gold Media Partners",
       "about_fair":"International Fisheries and Aquaculture Exposition in Mexico.",
-      "event_date":"May 15 to 17 2024 | Expo Guadalajara Jalisco"
+      "event_date":"May 15 to 17 2024 | Expo Guadalajara Jalisco",
+      "aftershow_report":"Aftershow Report 2023",
+      "contract":"Contract WSI 2024",
+      "floor_plan":"Floor Plan 2024"
     },
     "about":{
       "description1":"Despite having several factors that work in its favor, Mexico still has a great opportunity to boost the country’s aquaculture and fishing production.",
