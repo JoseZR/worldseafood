@@ -214,25 +214,25 @@
   "why-attend":{
     "title":"10 reasons to attend WSI 2024",
     "description1":"<strong>World Seafood Industry </strong> will bring together the region’s experts in the fisheries and aquaculture sector, opening opportunities to exchange innovations, ideas, and close deals. In 3 days of trade show, combined with an extensive educational program and social events, you will have the opportunity to meet with industry leaders and gain regional and international expertise.",
-    "item1":"<strong>Discover innovations</strong> in fisheries and aquaculture technologies on the exhibition floor.",
+    "item1":"<strong class='text-violet-700'>Discover innovations</strong> in fisheries and aquaculture technologies on the exhibition floor.",
 
-    "item2":"<strong>Visit the first B2B platform</strong> for the fishing and aquaculture industry in Mexico.",
+    "item2":"<strong class='text-violet-700'>Visit the first B2B platform</strong> for the fishing and aquaculture industry in Mexico.",
 
-    "item3":"<strong>Increase your knowledge</strong> with the lectures, pitches and workshops of the international educational program focused on the fishing and aquaculture market.",
+    "item3":"<strong class='text-violet-700'>Increase your knowledge</strong> with the lectures, pitches and workshops of the international educational program focused on the fishing and aquaculture market.",
 
-    "item4":"<strong>Develop new contacts</strong> and create alliances with leaders in the fishing and aquaculture market.",
+    "item4":"<strong class='text-violet-700'>Develop new contacts</strong> and create alliances with leaders in the fishing and aquaculture market.",
 
-    "item5":"<strong>Talk with national and international providers</strong> from different areas of the sector, such as: equipment and machinery, processing, logistics and distribution, wholesalers, and general services.",
+    "item5":"<strong class='text-violet-700'>Talk with national and international providers</strong> from different areas of the sector, such as: equipment and machinery, processing, logistics and distribution, wholesalers, and general services.",
 
-    "item6":"<strong>Enjoy networking, press and social events,</strong> distributed over 3 days of the event.",
+    "item6":"<strong class='text-violet-700'>Enjoy networking, press and social events,</strong> distributed over 3 days of the event.",
 
-    "item7":"<strong>Increase your company's productivity,</strong> closing projects in our business area and VIP lounge.",
+    "item7":"<strong class='text-violet-700'>Increase your company's productivity,</strong> closing projects in our business area and VIP lounge.",
 
-    "item8":"<strong>Get a reference of international aquaculture</strong> and fishing programs and innovations, with videos presented in our Cinéma area.",
+    "item8":"<strong class='text-violet-700'>Get a reference of international aquaculture</strong> and fishing programs and innovations, with videos presented in our Cinéma area.",
 
-    "item9":"<strong>Test and observe face-to-face</strong> application and technologies at the exhibitors' booths.",
+    "item9":"<strong class='text-violet-700'>Test and observe face-to-face</strong> application and technologies at the exhibitors' booths.",
 
-    "item10":"<strong>Enjoy the State of Jalisco!</strong> One of the top 5 aquaculture and fisheries producers in Mexico, and the birthplace of mariachi and tequila."
+    "item10":"<strong class='text-violet-700'>Enjoy the State of Jalisco!</strong> One of the top 5 aquaculture and fisheries producers in Mexico, and the birthplace of mariachi and tequila."
   },
   "visitor-profile":{
     "title":"Visitor Profile",
