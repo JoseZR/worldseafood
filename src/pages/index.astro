@@ -44,7 +44,7 @@ changeLanguage("es");
       </div>
     </section>
     <div class="grid place-items-center">
-      <div class="grid sm:flex justify-center my-20">
+      <div class="grid sm:flex justify-center lg:my-20 my-6">
         <a
           class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-violet-900 dark:focus:ring-violet-800 rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
           href={i18next.language === "en"
@@ -269,6 +269,31 @@ changeLanguage("es");
           </div>
         </div>
       </div>
+    </div>
+    <p class='mt-8 mb-14 font-bold text-3xl text-center uppercase text-violet-700'>
+      {t('home.organized_by')}
+    </p>
+    <div class='sm:flex grid gap-8 justify-center'>
+      
+      <a href='https://www.iegexpo.it/en/' target='_blank' rel='noreferrer'>
+        <img
+          src='/worldseafood/img/italianExhibitionGroup.webp'
+          width={150}
+          height={82}
+          loading='lazy'
+          alt='italianExhibitionGroup'
+        />
+      </a>
+
+      <a href='https://www.messe.de/en/' target='_blank' rel='noreferrer'>
+        <img
+          src='/worldseafood/img/deutscheMesse.webp'
+          width={250}
+          height={54}
+          loading='lazy'
+          alt='deutscheMesse'
+        />
+      </a>
     </div>
     <div class="my-8">
       <Marquee partners={partners} title="Media Partners" />
