@@ -1,17 +1,18 @@
 ---
 import i18next, { t } from "i18next";
 import { LanguageSelector } from "astro-i18next/components";
+import { Suscribe } from "./Suscribe";
 
 const lang = i18next.language;
 const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
 ---
 
 <footer class="bg-white dark:bg-transparent  bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 focus:ring-violet-900 dark:focus:ring-violet-800">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:px-10 lg:py-8">
+  <div class="mx-auto w-full max-w-screen-xl p-2 py-6 lg:px-10 lg:py-8">
     <div
-      class="lg:flex grid place-items-center md:justify-between justify-evenly"
+      class="lg:flex grid place-items-center items-start md:justify-between justify-evenly"
     >
-      <div class="mb-6 md:mb-0">
+      <div class="mb-6 md:mb-0 p-4 ">
         <a
           href={`${base}/`}
           class="flex items-center space-x-3 rtl:space-x-reverse mb-8"
@@ -114,46 +115,57 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
           </a>
         </div>
       </div>
-      <div>
-        <div class="lg:text-left text-center">
-          <address>
-            <h3 class="text-xl text-white font-bold mb-2">AgroTech México 2024</h3>
-            <p class="text-white" set:html={t("footer.event_date")} />
-          </address>
-          <address>
-            <p class="text-xl font-medium text-white pt-4 mb-2">{t("footer.title")}</p>
-            <p class="text-white flex lg:justify-start justify-center">
-              <svg
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                ><path
-                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                ></path><path
-                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                ></path>
-              </svg>
-              <a class="ps-2 hover:underline" href="mailto:infoagrotechwsi@igeco.mx	">
-                infoagrotechwsi@igeco.mx</a
-              >
-            </p>
-            <p class="text-white flex lg:justify-start justify-center">
-              <svg
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                  clip-rule="evenodd"
+      <div class="">
+        <div class="flex lg:flex-row flex-col items-center justify-center lg:text-left text-center">
+          <div class="w-full sm:w-1/4 mb-4">
+            <address>
+              <h3 class="text-xl text-white font-bold mb-2">World Seafood México 2024</h3>
+              <p class="text-white" set:html={t("footer.event_date")} />
+            </address>
+            <address>
+              <p class="text-xl font-medium text-white pt-4 mb-2">{t("footer.title")}</p>
+              <p class="text-white flex lg:justify-start justify-center">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  ><path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path><path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+                <a class="ps-2 hover:underline" href="mailto:infoagrotechwsi@igeco.mx	">
+                  infoagrotechwsi@igeco.mx</a
                 >
-                </path>
-              </svg> +52 55 7028 3335 ext. 824
-            </p>
-          </address>
+              </p>
+              <p class="text-white flex lg:justify-start justify-center">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  >
+                  </path>
+                </svg> +52 55 7028 3335 ext. 824
+              </p>
+            </address>
+          </div>
+          <!-- FORMULARIO PARA BOLETIN -->
+          <div class="w-full sm:w-3/5">
+            <Suscribe
+              description={t('footer.description_suscribe')}
+              suscribe_label={t('footer.suscribe_label')}
+              button={t('footer.suscribe_button')}
+              client:only
+            />
+          </div>
         </div>
         <!-- MENU DE NAVEGACIÓN -->
         <nav class="bg-white border-gray-200 order-1 dark:bg-transparent px-2 sm:px-4 py-2.5">
@@ -419,9 +431,8 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
           </div>
         </nav>
       </div>
-      
     </div>
-    <hr class="my-6 border-gray-900 sm:mx-auto dark:border-gray-100 lg:my-8" />
+    <hr class="my-4 border-gray-900 sm:mx-auto dark:border-gray-100 lg:my-8" />
     <div class="flex flex-wrap w-full  lg:justify-start items-center justify-center">
       <span class="text-xl text-gray-100 text-center dark:text-gray-100"
         ><a href="https://igeco.mx/aviso-de-privacidad" target="_blank" class="hover:underline"
