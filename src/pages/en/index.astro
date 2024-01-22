@@ -9,50 +9,46 @@ changeLanguage("en");
 
 <Layout title="Worldseafood">
   <main>
-    <section class='relative h-screen'>
+    <section class="relative h-screen">
       <video
-        class='absolute w-screen h-screen z-[-1]'
+        class="absolute w-screen h-screen z-[-1]"
         muted
         loop
         autoplay
         playsinline
       >
-        <source src='/worldseafood/worldseafood_2024.mp4' type='video/mp4' />
+        <source src="/worldseafood/worldseafood_2024.mp4" type="video/mp4" />
       </video>
-      <div class='flex items-center h-full'>
-        <div class='container mx-auto px-4' style="text-shadow: 4px 4px 4px black;">
-          <p class="text-7xl font-bold text-white">WORLD <br>SEAFOOD <br> INDUSTRY</p>
-          <p class='text-white font-bold home-text-agro text-3xl pt-10'>
-            {t('home.about_fair')}
+      <div class="flex items-center h-full">
+        <div
+          class="container mx-auto px-4"
+          style="text-shadow: 4px 4px 4px black;"
+        >
+          <p class="lg:text-7xl text-5xl font-bold text-white lg:text-left text-center">
+            WORLD <br />SEAFOOD <br /> INDUSTRY
           </p>
-          <p class='text-white font-bold home-text-agro text-3xl pt-2'>
-            {t('home.event_date')}
+          <p class="text-white font-bold home-text-agro text-3xl pt-10 lg:text-left text-center">
+            {t("home.about_fair")}
+          </p>
+          <p class="text-white font-bold home-text-agro text-3xl pt-2 lg:text-left text-center">
+            {t("home.event_date")}
           </p>
           <img
-            src='/worldseafood/img/logo_igeco_deutsche.webp'
-            alt='Igeco'
-            height='42'
-            class='filter-shadow pt-16'
+            src="/worldseafood/img/logo_igeco_deutsche.webp"
+            alt="Igeco"
+            height="42"
+            class="filter-shadow pt-16"
           />
         </div>
       </div>
     </section>
     <div class="grid place-items-center">
-      <!-- <div class="x-auto 2xl:m-10">
-        <img
-          src={i18next.language === "es"
-            ? "/worldseafood/img/world_seafood_es.jpg"
-            : "/worldseafood/img/world_seafood_en.jpg"}
-          class="w-100"
-          alt=""
-        />
-      </div> -->
       <div class="grid sm:flex justify-center my-20">
         <a
           class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-violet-900 dark:focus:ring-violet-800 rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
           href={i18next.language === "en"
-            ? "/agrotechmexico/files/AGROTECH_FACTSHEET_2024_EN_v120124.pdf"
-            : "/agrotechmexico/files/AGROTECH_FACTSHEET_2024_ES_v120124.pdf"}
+            ? "/worldseafood/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf"
+            : "/worldseafood/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf"}
           target="_blank"
         >
           <svg
@@ -72,7 +68,9 @@ changeLanguage("en");
         </a>
         <a
           class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-violet-900 dark:focus:ring-violet-800 rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
-          href="/agrotechmexico/files/AGROTECH-2024-141223-V3-Model.pdf"
+          href={i18next.language === "en"
+            ? "/worldseafood/files/AFTERSHOW_WSI_en.pdf"
+            : "/worldseafood/files/AFTERSHOW_WSI_es.pdf"}
           target="_blank"
         >
           <svg
@@ -155,10 +153,45 @@ changeLanguage("en");
           />
         </div>
       </div>
-      <div class="flex flex-wrap items-center justify-center lg:w-auto lg:px-36 py-4 ">
+      <div
+        class="flex flex-wrap items-center justify-center lg:w-auto lg:px-36 py-4"
+      >
         <div class="w-full p-4 flex flex-wrap">
           <div class="w-full sm:w-1/6 flex lg:justify-center">
-            <svg width="64px" height="64px" viewBox="0 0 32 32" id="svg5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs2"></defs> <g id="layer1" transform="translate(-12,-100)"> <path d="m 22,117.69531 a 1,1 0 0 0 -1,1 V 129 a 1.0001,1.0001 0 0 0 1.447266,0.89453 L 28,127.11719 l 5.552734,2.77734 A 1.0001,1.0001 0 0 0 35,129 v -10.30469 a 1,1 0 0 0 -1,-1 1,1 0 0 0 -1,1 v 8.6875 l -4.552734,-2.27734 a 1.0001,1.0001 0 0 0 -0.894532,0 L 23,127.38281 v -8.6875 a 1,1 0 0 0 -1,-1 z" id="path5345" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> <path d="m 28,102 c -5.510997,0 -10.000002,4.489 -10,10 -2e-6,5.511 4.489003,10 10,10 5.510997,0 10.000002,-4.489 10,-10 2e-6,-5.511 -4.489003,-10 -10,-10 z m 0,2 c 4.430118,0 8.000001,3.56988 8,8 10e-7,4.43012 -3.569882,8 -8,8 -4.430118,0 -8.000001,-3.56988 -8,-8 -1e-6,-4.43012 3.569882,-8 8,-8 z" id="circle5330" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"></path> <path d="m 20.423828,47.148437 a 1.2290729,1.2290729 0 0 0 -0.890625,0.105469 L 16,49.150391 12.466797,47.253906 a 1.2290729,1.2290729 0 0 0 -1.791016,1.300781 l 0.710938,3.947266 -2.8945315,2.773438 a 1.2290729,1.2290729 0 0 0 0.6835938,2.105468 l 3.9726567,0.542969 1.74414,3.611328 a 1.2290729,1.2290729 0 0 0 2.214844,0 l 1.74414,-3.611328 3.972657,-0.542969 a 1.2290729,1.2290729 0 0 0 0.683593,-2.105468 l -2.894531,-2.773438 0.710938,-3.947266 a 1.2290729,1.2290729 0 0 0 -0.900391,-1.40625 z m -6.876953,3.47461 1.871094,1.003906 a 1.2290729,1.2290729 0 0 0 1.164062,0 l 1.871094,-1.003906 -0.376953,2.091797 a 1.2290729,1.2290729 0 0 0 0.359375,1.105468 l 1.533203,1.470704 -2.103516,0.287109 a 1.2290729,1.2290729 0 0 0 -0.941406,0.681641 L 16,58.171875 15.076172,56.259766 a 1.2290729,1.2290729 0 0 0 -0.941406,-0.681641 l -2.103516,-0.287109 1.533203,-1.470704 a 1.2290729,1.2290729 0 0 0 0.359375,-1.105468 z" id="path5332" style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" transform="matrix(-0.8149634,0,0,-0.81244284,41.039413,156.41496)"></path> </g> </g></svg>
+            <svg
+              width="64px"
+              height="64px"
+              viewBox="0 0 32 32"
+              id="svg5"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+              ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                <defs id="defs2"></defs>
+                <g id="layer1" transform="translate(-12,-100)">
+                  <path
+                    d="m 22,117.69531 a 1,1 0 0 0 -1,1 V 129 a 1.0001,1.0001 0 0 0 1.447266,0.89453 L 28,127.11719 l 5.552734,2.77734 A 1.0001,1.0001 0 0 0 35,129 v -10.30469 a 1,1 0 0 0 -1,-1 1,1 0 0 0 -1,1 v 8.6875 l -4.552734,-2.27734 a 1.0001,1.0001 0 0 0 -0.894532,0 L 23,127.38281 v -8.6875 a 1,1 0 0 0 -1,-1 z"
+                    id="path5345"
+                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"
+                  ></path>
+                  <path
+                    d="m 28,102 c -5.510997,0 -10.000002,4.489 -10,10 -2e-6,5.511 4.489003,10 10,10 5.510997,0 10.000002,-4.489 10,-10 2e-6,-5.511 -4.489003,-10 -10,-10 z m 0,2 c 4.430118,0 8.000001,3.56988 8,8 10e-7,4.43012 -3.569882,8 -8,8 -4.430118,0 -8.000001,-3.56988 -8,-8 -1e-6,-4.43012 3.569882,-8 8,-8 z"
+                    id="circle5330"
+                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"
+                  ></path>
+                  <path
+                    d="m 20.423828,47.148437 a 1.2290729,1.2290729 0 0 0 -0.890625,0.105469 L 16,49.150391 12.466797,47.253906 a 1.2290729,1.2290729 0 0 0 -1.791016,1.300781 l 0.710938,3.947266 -2.8945315,2.773438 a 1.2290729,1.2290729 0 0 0 0.6835938,2.105468 l 3.9726567,0.542969 1.74414,3.611328 a 1.2290729,1.2290729 0 0 0 2.214844,0 l 1.74414,-3.611328 3.972657,-0.542969 a 1.2290729,1.2290729 0 0 0 0.683593,-2.105468 l -2.894531,-2.773438 0.710938,-3.947266 a 1.2290729,1.2290729 0 0 0 -0.900391,-1.40625 z m -6.876953,3.47461 1.871094,1.003906 a 1.2290729,1.2290729 0 0 0 1.164062,0 l 1.871094,-1.003906 -0.376953,2.091797 a 1.2290729,1.2290729 0 0 0 0.359375,1.105468 l 1.533203,1.470704 -2.103516,0.287109 a 1.2290729,1.2290729 0 0 0 -0.941406,0.681641 L 16,58.171875 15.076172,56.259766 a 1.2290729,1.2290729 0 0 0 -0.941406,-0.681641 l -2.103516,-0.287109 1.533203,-1.470704 a 1.2290729,1.2290729 0 0 0 0.359375,-1.105468 z"
+                    id="path5332"
+                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"
+                    transform="matrix(-0.8149634,0,0,-0.81244284,41.039413,156.41496)"
+                  ></path>
+                </g>
+              </g></svg
+            >
           </div>
           <div class="w-full sm:w-5/6">
             <p class="text-2xl font-bold mb-4">{t("home.title_topic2")}</p>
@@ -236,12 +269,21 @@ changeLanguage("en");
         </div>
       </div>
     </div>
-    <div class='my-8'>
-      <Marquee  partners={partners} title='Media Partners'/>
+    <div class="my-8">
+      <Marquee partners={partners} title="Media Partners" />
     </div>
   </main>
 </Layout>
 
 <style>
-
+  video {
+    object-fit: cover;
+    object-position: left;
+  }
+  .home-text-agro {
+    text-shadow: 4px 4px 4px black;
+  }
+  .filter-shadow {
+    filter: drop-shadow(4px 4px 4px black);
+  }
 </style>
