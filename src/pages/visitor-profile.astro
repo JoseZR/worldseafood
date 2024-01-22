@@ -4,10 +4,123 @@ import { t, changeLanguage } from "i18next";
 
 changeLanguage("es");
 ---
+
 <Layout title="">
-    <p
-    class="text-4xl text-center uppercase font-bold text-violet-700 pt-14 pb-4"
+  <p
+    class="font-bold text-4xl text-center uppercase text-violet-700 pt-14 pb-4"
   >
     {t("visitor-profile.title")}
   </p>
+  <p
+    class="lg:mx-14 m-8 text-xl"
+    set:html={t("visitor-profile.description1")}
+  />
+
+  <p
+    class="font-bold text-4xl text-center uppercase text-violet-700 pt-14 pb-4"
+  >
+    {t("visitor-profile.title2")}
+  </p>
+
+  <section>
+    <div
+      class="flex lg:flex-row flex-col items-center justify-center lg:gap-4 lg:px-14 my-4"
+    >
+      <div class="w-full sm:w-1/2 p-4">
+        <ul class="">
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/comprador.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item1")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/maintenance.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item2")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/reception.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />{t("visitor-profile.item3")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/fisherman.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />{t("visitor-profile.item4")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/builders.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />{t("visitor-profile.item5")}
+          </li>
+        </ul>
+      </div>
+      <div class="w-full sm:w-1/2 p-4">
+        <ul>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/truck.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item6")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/fish.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item7")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/hands.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item8")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/graduate-cap.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item9")}
+          </li>
+          <li class="p-4 font-semibold text-xl flex items-center">
+            <img
+              src="/worldseafood/img/engage.webp"
+              alt=""
+              width="65px"
+              class="pr-4"
+            />
+            {t("visitor-profile.item10")}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </Layout>
