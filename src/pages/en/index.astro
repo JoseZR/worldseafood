@@ -9,8 +9,36 @@ changeLanguage("en");
 
 <Layout title="Worldseafood">
   <main>
+    <section class='relative h-screen'>
+      <video
+        class='absolute w-screen h-screen z-[-1]'
+        muted
+        loop
+        autoplay
+        playsinline
+      >
+        <source src='/worldseafood/worldseafood_2024.mp4' type='video/mp4' />
+      </video>
+      <div class='flex items-center h-full'>
+        <div class='container mx-auto px-4' style="text-shadow: 4px 4px 4px black;">
+          <p class="text-7xl font-bold text-white">WORLD <br>SEAFOOD <br> INDUSTRY</p>
+          <p class='text-white font-bold home-text-agro text-3xl pt-10'>
+            {t('home.about_fair')}
+          </p>
+          <p class='text-white font-bold home-text-agro text-3xl pt-2'>
+            {t('home.event_date')}
+          </p>
+          <img
+            src='/worldseafood/img/logo_igeco_deutsche.webp'
+            alt='Igeco'
+            height='42'
+            class='filter-shadow pt-16'
+          />
+        </div>
+      </div>
+    </section>
     <div class="grid place-items-center">
-      <div class="x-auto 2xl:m-10">
+      <!-- <div class="x-auto 2xl:m-10">
         <img
           src={i18next.language === "es"
             ? "/worldseafood/img/world_seafood_es.jpg"
@@ -18,7 +46,7 @@ changeLanguage("en");
           class="w-100"
           alt=""
         />
-      </div>
+      </div> -->
       <div class="grid sm:flex justify-center my-20">
         <a
           class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-violet-900 dark:focus:ring-violet-800 rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
@@ -167,7 +195,7 @@ changeLanguage("en");
               <p class="text-justify text-lg">{t("home.desc_topic1")}</p>
             </div>
           </div>
-          <di v class="w-full sm:w-1/2 p-4 flex flex-wrap">
+          <div class="w-full sm:w-1/2 p-4 flex flex-wrap">
             <div class="w-full sm:w-1/3 px-6 flex lg:justify-center">
               <svg
                 width="64px"
