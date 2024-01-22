@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import i18next, { changeLanguage } from "i18next";
 import { toolkit_es, toolkit_en } from "../../constants_gallery";
-import LightBox from "../../components/LightBox.jsx";
+import LightBoxToolkit from "../../components/LightBoxToolkit.jsx";
 
 changeLanguage("en");
 ---
@@ -10,7 +10,7 @@ changeLanguage("en");
 <Layout title="Rates Agrotech">
   <section class="container mx-auto lg:w-[1050px] p-8 pt-10 mb-10">
     <h1 class="font-extrabold text-4xl text-agro-green text-center">TOOLKIT</h1>
-    <LightBox images={i18next.language === 'en'
+    <LightBoxToolkit images={i18next.language === 'en'
     ? toolkit_en
     : toolkit_es } client:visible />
   </section>

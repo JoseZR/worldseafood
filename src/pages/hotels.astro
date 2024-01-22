@@ -9,8 +9,8 @@ changeLanguage("es");
 <Layout title='Agrotech | Special hotels rates'>
   <div class='mt-5 mb-5 container mx-auto'>
     <h1 class='font-bold text-3xl mx-12'>{t('hotels.title')}</h1>
-    <p class='mt-3 mx-12' set:html={t('hotels.description')} />
-    <section class='mt-5 mx-36 hotels'>
+    <p class='mt-3 mx-12 text-justify' set:html={t('hotels.description')} />
+    <section class='mt-14 lg:mx-36 mx-8 hotels'>
       <div class='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
         {
           hotels.map((hotel) => (
@@ -96,13 +96,13 @@ changeLanguage("es");
     </section>
     <section class='mt-5 mx-12'>
       <h2 class='font-bold text-2xl'>{t('hotels.about_gdl')}</h2>
-      <p class='mt-3' set:html={t('hotels.description_gdl')} />
+      <p class='mt-3 text-justify' set:html={t('hotels.description_gdl')} />
       <h2 class='mt-5 font-bold text-2xl'>{t('hotels.restaurants')}</h2>
-      <p class='mt-3' set:html={t('hotels.restaurants_desc')} />
+      <p class='mt-3 text-justify' set:html={t('hotels.restaurants_desc')} />
       <h2 class='mt-5 font-bold text-2xl'>{t('hotels.entertainment')}</h2>
-      <p class='mt-3' set:html={t('hotels.entertainment_desc')} />
+      <p class='mt-3 text-justify' set:html={t('hotels.entertainment_desc')} />
       <h2 class='mt-5 font-bold text-2xl'>{t('hotels.money')}</h2>
-      <p class='mt-3' set:html={t('hotels.money_desc')} />
+      <p class='mt-3 text-justify' set:html={t('hotels.money_desc')} />
       <a
         href='https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=MXN'
         target='_blank'
