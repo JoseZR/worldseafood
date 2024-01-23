@@ -101,7 +101,7 @@
     },
     "exhibitor-profile":{
       "title":"Profile Exhibitor",
-      "description1":"<strong>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
+      "description1":"<strong class='text-violet-700'>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
       "topic1":{
         "title":"Aquaculture, fishing",
         "sub_title":"AND AQUAPONICS TECHNOLOGY",
