@@ -4,7 +4,7 @@ import { LanguageSelector } from "astro-i18next/components";
 import { Suscribe } from "./Suscribe";
 
 const lang = i18next.language;
-const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
+const base = lang === "es" ? "" : `/${lang}`;
 ---
 
 <footer class="bg-white dark:bg-transparent  bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 focus:ring-violet-900 dark:focus:ring-violet-800">
@@ -18,7 +18,7 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
           class="flex items-center space-x-3 rtl:space-x-reverse mb-8"
         >
           <img
-            src="/worldseafood/img/worldseafood_logo.webp"
+            src="/img/worldseafood_logo.webp"
             class="w-[200px] lg:w-[350px] lg:h-15 lg:py-2"
             alt="Worldseafood"
           />
@@ -28,7 +28,7 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
             href="https://www.facebook.com/WorldSeafoodIndustry/" target="_blank"
             class="text-gray-100 hover:text-gray-900 dark:hover:text-white"
           >
-            <img src="/worldseafood/img/facebook.webp" alt="" width="30px">
+            <img src="/img/facebook.webp" alt="" width="30px">
               <path
                 fill-rule="evenodd"
                 d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
@@ -40,7 +40,7 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
           href="https://www.instagram.com/worldseafoodin/" target="_blank"
           class="text-gray-100 hover:text-gray-900 dark:hover:text-white"
         >
-          <img src="/worldseafood/img/instagram.webp" alt="" width="30px">
+          <img src="/img/instagram.webp" alt="" width="30px">
             <path
               fill-rule="evenodd"
               d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
@@ -52,7 +52,7 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
         href="https://www.linkedin.com/company/world-seafood-industry/" target="_blank"
         class="text-gray-100 hover:text-gray-900 dark:hover:text-white"
       >
-        <img src="/worldseafood/img/linkedin.webp" alt="" width="30px">
+        <img src="/img/linkedin.webp" alt="" width="30px">
           <path
             fill-rule="evenodd"
             d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
@@ -123,13 +123,13 @@ const base = lang === "es" ? "/worldseafood" : `/worldseafood/${lang}`;
               {
                 i18next.language === "en" ? (
                   <img
-                    src="/worldseafood/img/flag-us.svg"
+                    src="/img/flag-us.svg"
                     alt="us flag"
                     class="h-6 w-6 rounded-full mr-2"
                   />
                 ) : (
                   <img
-                    src="/worldseafood/img/flag-mexico.svg"
+                    src="/img/flag-mexico.svg"
                     alt="México flag"
                     class="h-6 w-6 rounded-full mr-2"
                   />

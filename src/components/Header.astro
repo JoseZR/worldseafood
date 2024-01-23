@@ -4,16 +4,14 @@ import { LanguageSelector } from "astro-i18next/components";
 
 const lang = i18next.language;
 const base =
-  lang === "es"
-    ? "/worldseafood"
-    : `/worldseafood/${lang}`;
+  lang === "es" ? "" : `/${lang}`;
 ---
 
 <nav class="bg-violet-600 border-gray-600">
   <div class=" flex flex-wrap items-center justify-between mx-auto px-10 py-5 dark:border-white-700 shadow-lg">
     <a href={`${base}/`} class="flex items-center space-x-3 rtl:space-x-reverse">
       <img
-        src="/worldseafood/img/worldseafood_logo.webp"
+        src="/img/worldseafood_logo.webp"
         class="w-auto lg:w-[200px] h-15 py-2 mx-5"
         alt="Flowbite Logo"
       />
@@ -22,13 +20,13 @@ const base =
       {
         i18next.language === "en" ? (
           <img
-            src="/worldseafood/img/flag-us.svg"
+            src="/img/flag-us.svg"
             alt="us flag"
             class="h-6 w-6 rounded-full mr-2"
           />
         ) : (
           <img
-            src="/worldseafood/img/flag-mexico.svg"
+            src="/img/flag-mexico.svg"
             alt="México flag"
             class="h-6 w-6 rounded-full mr-2"
           />
@@ -175,8 +173,8 @@ const base =
               <li>
                 <a
                   href={i18next.language === 'en'
-                  ? '/worldseafood/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf'
-                  : '/worldseafood/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf'}
+                  ? '/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf'
+                  : '/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf'}
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option5")}</a
@@ -184,7 +182,7 @@ const base =
               </li>
               <li>
                 <a
-                  href='/worldseafood/files/AGROTECH-WSF-2024-Plano.pdf'
+                  href='/files/AGROTECH-WSF-2024-Plano.pdf'
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option6")}</a
@@ -192,7 +190,7 @@ const base =
               </li>
               <li>
                 <a
-                href='/worldseafood/files/AGROTECH_WSF_contract_2024.pdf'
+                href='/files/AGROTECH_WSF_contract_2024.pdf'
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option7")}</a
@@ -281,34 +279,3 @@ const base =
   </div>
 </nav>
 
-<style>
-   /* li a {
-    color: white;
-  }
-  li button {
-    color: white;
-  }
-  .dropdown li a {
-    color: black;
-    text-shadow: none;
-  }
-  .dropdown li button {
-    color: black;
-    text-shadow: none;
-  }
-  .dropdown a {
-    color: black;
-    text-shadow: none;
-  }
-  .language-selector {
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  .language-selector:focus {
-    border: none;
-    box-shadow: none;
-    color: black;
-  } */
-</style>

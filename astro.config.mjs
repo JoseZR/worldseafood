@@ -11,7 +11,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://hfmexico.mx/worldseafood/",
-  base: "/worldseafood",
   packageOptions: {
     // Set type to module for ECMAScript module support
     type: 'module',
