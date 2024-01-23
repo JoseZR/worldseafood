@@ -6,7 +6,8 @@ const lang = i18next.language;
 const base = lang === "es" ? "" : `/${lang}`;
 ---
 
-<div
+<div class="">
+  <div
   id="sticky-banner"
   tabindex="-1"
   class="flex justify-between p-4 border-b bg-violet-950 border-violet-950"
@@ -45,7 +46,7 @@ const base = lang === "es" ? "" : `/${lang}`;
     >
       <img
         src="/img/worldseafood_logo.webp"
-        class="w-auto lg:w-[200px] sm:w-[150px] h-15 py-2 mx-5"
+        class="lg:w-[200px] w-[250px] h-15 py-2 mx-5"
         alt="Flowbite Logo"
       />
     </a>
@@ -303,19 +304,6 @@ const base = lang === "es" ? "" : `/${lang}`;
     </div>
   </div>
 </nav>
+</div>
 <style>
-  /* @media only screen and (min-width: 992px) {
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 2;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    nav {
-      top: 0;
-      z-index: 2;
-    }
-  } */
 </style>
