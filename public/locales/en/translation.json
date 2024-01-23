@@ -60,7 +60,23 @@
       "aftershow_report":"Aftershow Report 2023",
       "contract":"Contract WSI 2024",
       "floor_plan":"Floor Plan 2024",
-      "organized_by": "Organized by"
+      "organized_by": "Organized by",
+      "topic1":{
+        "title":"WHY EXHIBIT",
+        "description":"Don’t miss the opportunity to present your products and services to a new and expanding market through this platform."
+      },
+      "topic2":{
+        "title":"EXHIBITOR PROFILE",
+        "description":"World Seafood Industry encourages industry professionals to showcase their products and innovations on this platform."
+      },
+      "topic3":{
+        "title":"WHY VISIT",
+        "description":"Get an overview of the Mexican fishing and aquaculture industry, new markets and opportunities."
+      },
+      "topic4":{
+        "title":"VISITOR PROFILE",
+        "description":"World Seafood Industry invites industry professionals, distributors and buyer groups to attend the fair."
+      }
     },
     "about":{
       "description1":"Despite having several factors that work in its favor, Mexico still has a great opportunity to boost the country’s aquaculture and fishing production.",

@@ -60,7 +60,23 @@
       "aftershow_report":"Reporte de resultados 2023",
       "contract":"Contrato WSI 2024",
       "floor_plan":"Plano 2024",
-      "organized_by": "Organizado por"
+      "organized_by": "Organizado por",
+      "topic1":{
+        "title":"POR QUÉ EXPONER",
+        "description":"No pierda la oportunidad de presentar sus productos y servicios a un mercado nuevo y en expansión a través de esta plataforma."
+      },
+      "topic2":{
+        "title":"PERFIL DEL EXPOSITOR",
+        "description":"World Seafood Industry alienta a los profesionales de la industria a exhibir sus productos e innovaciones en esta plataforma."
+      },
+      "topic3":{
+        "title":"POR QUÉ VISITAR",
+        "description":"Obtenga una visión general de la industria pesquera y acuícola mexicana, los nuevos mercados y sus oportunidades"
+      },
+      "topic4":{
+        "title":"PERFIL DEL VISITANTE",
+        "description":"World Seafood Industry invita a los profesionales de la industria, distribuidores y grupos de compradores a asistir a la feria."
+      }
     },
     "about":{
       "description1":"A pesar de contar con varios factores que juegan a su favor, México aún tiene una gran oportunidad para potenciar la producción acuícola y de pesca del país.",
