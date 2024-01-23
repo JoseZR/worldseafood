@@ -260,5 +260,8 @@
       "item8":"Organizaciones gubernamentales y no gubernamentales",
       "item9":"Academia",
       "item10":"Entre otros"
+    },
+    "widgetsocial":{        
+        "description": "Evento celebrado simultáneamente con World SeaFood Industry"
     }
   }

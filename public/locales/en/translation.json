@@ -268,5 +268,8 @@
     "item8":"Government and non-government organizations",
     "item9":"Academics",
     "item10":"Among others"
-  }
+  },
+  "widgetsocial":{        
+        "description": "Event held simultaneously with Agrotech"
+    }
   }
