@@ -11,4 +11,14 @@ const partners = [
     { link: 'https://www.cosmos.com.mx/', src: '/img/cosmos.webp', alt:'Online Cosmos plataforma digital b2b', width: 200, height: 88 },
     { link: 'https://www.horticultivos.com/home', src: '/img/horticultivos.webp', alt:'Horticultivos', width: 100, height: 100 },
 ]
-export {partners}
+
+const exhibitors = [    
+    { link: 'https://mx.kaeser.com/', src: '/img/expositores/kaeser.webp', alt:'kaeser-compresores', width: 220},
+    { link: 'https://pulmex.com/', src: '/img/expositores/Pulmex2000.webp', alt:'pulmex', width: 220},
+    { link: 'https://oxipez.com/', src: '/img/expositores/oxipez.webp', alt:'oxipez', width: 220},
+    { link: 'http://www.transmarina.com/', src: '/img/expositores/transmarina.webp', alt:'transmarina', width: 220 },
+    { link: 'http://www.seaflyingfood.cn/page-35982.html', src: '/img/expositores/seaflyingfood.webp', alt:'seaflyingfood', width: 220},
+    { link: 'https://grupomultimedios.com/', src: '/img/expositores/multimedios.webp', alt:'seaflyingfood', width: 220}
+]
+
+export {partners, exhibitors}
