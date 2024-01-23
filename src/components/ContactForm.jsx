@@ -17,7 +17,7 @@ export function ContactForm({name, subject, message, send}){
 
         try {
             setSendStatus(true)      
-            const statusEmail = await fetch('', requestOptions)
+            const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email-worldseafood', requestOptions)
             const dataEmail = await statusEmail.json()
             if (dataEmail.status) {
                 setSendStatus(false)

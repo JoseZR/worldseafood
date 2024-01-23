@@ -19,7 +19,7 @@ export function Suscribe({ description, suscribe_label, button}){
 
     try {
       setSendStatus(true)      
-      const statusEmail = await fetch('', requestOptions)
+      const statusEmail = await fetch('https://hfmexico.mx/agrotechmexico/backend/suscribe_worldseafood.php', requestOptions)
       const dataEmail = await statusEmail.json()
       if (dataEmail.status) {
         setSendStatus(false)
