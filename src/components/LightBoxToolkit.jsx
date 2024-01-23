@@ -31,15 +31,15 @@ export default function LightGallery({ images }) {
     setIsOpen(false)
   }
 
-  const nextImage = () => {
-    setCurrentImage((prevIndex) => (prevIndex + 1) % images.length)
-  }
+  // const nextImage = () => {
+  //   setCurrentImage((prevIndex) => (prevIndex + 1) % images.length)
+  // }
 
-  const prevImage = () => {
-    setCurrentImage(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    )
-  }
+  // const prevImage = () => {
+  //   setCurrentImage(
+  //     (prevIndex) => (prevIndex - 1 + images.length) % images.length
+  //   )
+  // }
 
   const handleThumbnailClick = (index) => {
     setCurrentImage(index)
