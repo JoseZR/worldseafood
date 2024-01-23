@@ -339,15 +339,14 @@ changeLanguage("en");
         />
       </a>
     </div>
-      <!-- <div class="my-8">
-        <Marquee partners={exhibitors} title={t("home.exhibitors")}/>
-      </div>
-    </div> -->
-    <!-- <div class="my-8">
-      <Marquee partners={partners} title="Media Partners" />
-    </div> -->
+    <p class='mt-8 mb-14 font-bold text-3xl text-center uppercase text-violet-700'>
+      {t("home.exhibitors")}
+    </p>
     <MarqueeReact images={exhibitors} client:only />
-    <MarqueeReact images={partners} direction='right' client:only />
+    <p class='mt-8 mb-14 font-bold text-3xl text-center uppercase text-violet-700'>
+      Media Partners
+    </p>
+    <MarqueeReact images={partners} direction='left' client:only />
   </main>
 </Layout>
 
