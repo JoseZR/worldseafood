@@ -10,7 +10,7 @@ const partners = [
     { link: 'https://dplnews.com/', src: '/img/dpl_news.webp', alt:'dpl news', width: 200, height: 76 },
     { link: 'https://www.cosmos.com.mx/', src: '/img/cosmos.webp', alt:'Online Cosmos plataforma digital b2b', width: 200, height: 88 },
     { link: 'https://www.horticultivos.com/home', src: '/img/horticultivos.webp', alt:'Horticultivos', width: 100, height: 100 },
-    { link: 'https://grupomultimedios.com/', src: '/img/expositores/multimedios.webp', alt:'seaflyingfood', width: 220}
+    { link: 'https://www.mmradio.com/', src: '/img/expositores/multimedios.webp', alt:'seaflyingfood', width: 220}
 ]
 
 const exhibitors = [    
