@@ -1,8 +1,8 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
-import { partners } from "../pages/logos_partners";
-import Marquee from "../components/Marquee.astro";
+import { partners, exhibitors } from "../logos_partners";
+import { MarqueeReact } from "../components/MarqueeReact.jsx";
 
 changeLanguage("es");
 ---
@@ -91,7 +91,7 @@ changeLanguage("es");
         </a>
         <a
           class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
-          href="/files/AGROTECH_WSF_contract_2024.pdf"
+          href="/files/ASSpaceAgreement-WSI-2024_v240124.pdf"
           target="_blank"
         >
           <svg
@@ -339,9 +339,14 @@ changeLanguage("es");
         />
       </a>
     </div>
-    <div class="my-8">
-      <Marquee partners={partners} title="Media Partners" />
-    </div>
+    <p class='mt-8 mb-4 font-bold text-3xl text-center uppercase text-violet-700'>
+      {t("home.exhibitors")}
+    </p>
+    <MarqueeReact images={exhibitors} client:only />
+    <p class='mt-8 mb-4 font-bold text-3xl text-center uppercase text-violet-700'>
+      Media Partners
+    </p>
+    <MarqueeReact images={partners} direction='left' client:only />
   </main>
 </Layout>
 

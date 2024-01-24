@@ -3,16 +3,50 @@ import i18next, { t } from "i18next";
 import { LanguageSelector } from "astro-i18next/components";
 
 const lang = i18next.language;
-const base =
-  lang === "es" ? "" : `/${lang}`;
+const base = lang === "es" ? "" : `/${lang}`;
 ---
 
+<div class="">
+  <div
+  id="sticky-banner"
+  tabindex="-1"
+  class="flex justify-between p-4 border-b bg-violet-950 border-violet-950"
+>
+  <div class="flex items-center mx-auto">
+    <p
+      class="flex lg:flex-row flex-col items-center text-center text-sm font-normal text-gray-500 dark:text-gray-400"
+    >
+      <span
+        class="inline-flex p-1 me-3 bg-gray-200 rounded-full w-6 h-6 items-center justify-center flex-shrink-0"
+      >
+        <svg
+          class="w-3 h-3 text-black"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 18 19"
+        >
+          <path
+            d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z"
+          ></path>
+        </svg>
+        <span class="sr-only">Light bulb</span>
+      </span>
+      <i class="text-white font-bold">{t("home.event_date")}</i>
+    </p>
+  </div>
+</div>
 <nav class="bg-violet-600 border-gray-600">
-  <div class=" flex flex-wrap items-center justify-between mx-auto px-10 lg:py-0 py-6 dark:border-white-700 shadow-lg">
-    <a href={`${base}/`} class="flex items-center space-x-3 rtl:space-x-reverse">
+  <div
+    class="flex flex-wrap items-center justify-between mx-auto px-10 lg:py-0 py-6 dark:border-white-700 shadow-lg"
+  >
+    <a
+      href={`${base}/`}
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
       <img
         src="/img/worldseafood_logo.webp"
-        class="w-auto lg:w-[200px] sm:w-[150px] h-15 py-2 mx-5"
+        class="lg:w-[200px] w-[250px] h-15 py-2 mx-5"
         alt="Flowbite Logo"
       />
     </a>
@@ -69,7 +103,7 @@ const base =
           <button
             id="dropdownNavbarLink"
             data-dropdown-toggle="dropdownNavbar1"
-            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0  md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
+            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
             >{t("menu.option1.title")}
             <svg
               class="w-2.5 h-2.5 ms-2.5"
@@ -89,12 +123,9 @@ const base =
           <!-- Dropdown menu -->
           <div
             id="dropdownNavbar1"
-            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto "
+            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto"
           >
-            <ul
-              class="py-2 text-sm"
-              aria-labelledby="dropdownLargeButton"
-            >
+            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
               <li>
                 <a
                   href={`${base}/about`}
@@ -104,8 +135,9 @@ const base =
               </li>
               <li>
                 <a
-                href="https://igeco.mx/history" target="_blank    "
-                  class="block px-4 py-2 hover:bg-gray-100  dark:hover:bg-violet-400 dark:hover:text-white"
+                  href="https://igeco.mx/history"
+                  target="_blank    "
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option1.subMenu.option2")}</a
                 >
               </li>
@@ -116,7 +148,7 @@ const base =
           <button
             id="dropdownNavbarLink"
             data-dropdown-toggle="dropdownNavbar2"
-            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0  md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
+            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
             >{t("menu.option2.title")}
             <svg
               class="w-2.5 h-2.5 ms-2.5"
@@ -136,22 +168,19 @@ const base =
           <!-- Dropdown menu -->
           <div
             id="dropdownNavbar2"
-            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto "
+            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto"
           >
-            <ul
-              class="py-2 text-sm"
-              aria-labelledby="dropdownLargeButton"
-            >
+            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
               <li>
                 <a
                   href={`${base}/contact`}
-                  class="block px-4 py-2 hover:bg-gray-100  dark:hover:bg-violet-400 dark:hover:text-white"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option1")}</a
                 >
               </li>
               <li>
                 <a
-                href={`${base}/exhibitor-profile`}
+                  href={`${base}/exhibitor-profile`}
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option2")}</a
                 >
@@ -172,9 +201,9 @@ const base =
               </li>
               <li>
                 <a
-                  href={i18next.language === 'en'
-                  ? '/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf'
-                  : '/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf'}
+                  href={i18next.language === "en"
+                    ? "/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf"
+                    : "/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf"}
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option5")}</a
@@ -182,7 +211,7 @@ const base =
               </li>
               <li>
                 <a
-                  href='/files/AGROTECH-WSF-2024-Plano.pdf'
+                  href="/files/AGROTECH-WSF-2024-Plano.pdf"
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option6")}</a
@@ -190,7 +219,7 @@ const base =
               </li>
               <li>
                 <a
-                href='/files/AGROTECH_WSF_contract_2024.pdf'
+                  href="/files/ASSpaceAgreement-WSI-2024_v240124.pdf"
                   target="_blank"
                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option2.subMenu.option7")}</a
@@ -224,7 +253,7 @@ const base =
           <button
             id="dropdownNavbarLink"
             data-dropdown-toggle="dropdownNavbarVisitors"
-            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0  md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
+            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
             >{t("menu.option3.title")}
             <svg
               class="w-2.5 h-2.5 ms-2.5"
@@ -244,12 +273,9 @@ const base =
           <!-- Dropdown menu -->
           <div
             id="dropdownNavbarVisitors"
-            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto "
+            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto"
           >
-            <ul
-              class="py-2 text-sm"
-              aria-labelledby="dropdownLargeButton"
-            >
+            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
               <li>
                 <a
                   href={`${base}/why-attend`}
@@ -259,8 +285,8 @@ const base =
               </li>
               <li>
                 <a
-                href={`${base}/visitor-profile`}
-                  class="block px-4 py-2 hover:bg-gray-100  dark:hover:bg-violet-400 dark:hover:text-white"
+                  href={`${base}/visitor-profile`}
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
                   >{t("menu.option3.subMenu.option2")}</a
                 >
               </li>
@@ -269,8 +295,8 @@ const base =
         </li>
         <li>
           <a
-          href={`${base}/gallery`}
-            class="block py-2 px-3 text-gray-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0  md:dark:hover:text-whitedark:hover:text-white md:dark:hover:bg-transparent"
+            href={`${base}/gallery`}
+            class="block py-2 px-3 text-gray-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-whitedark:hover:text-white md:dark:hover:bg-transparent"
             >{t("menu.gallery")}</a
           >
         </li>
@@ -278,4 +304,6 @@ const base =
     </div>
   </div>
 </nav>
-
+</div>
+<style>
+</style>

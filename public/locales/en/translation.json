@@ -33,11 +33,12 @@
               "option2":"Visitor Profile"
           }
       },
-      "gallery": "GALLERY"     
+      "gallery": "GALLERY",
+      "event_date" : "May 15 to 17 2024 | Expo Guadalajara Jalisco"    
     },
     "home": {
       "title": "SOBRE WORLD SEAFOOD MEXICO",
-      "description1": "Mexico’s dynamic and competitive fishing and aquaculture sector has a specialized business platform in this field: World Seafood Industry (WSI), the international B2B fishing and aquaculture pavilion in Mexico, which arrives in 2023 with an exhibition designed to meet the specific needs of the region.",
+      "description1": "Mexico’s dynamic and competitive fishing and aquaculture sector has a specialized business platform in this field: World Seafood Industry (WSI), the international fishing and aquaculture pavilion in Mexico, which arrives in 2023 with an exhibition designed to meet the specific needs of the region.",
       "description2": "WSI will serve as a showcase for leading wholesalers and retailers in different segments including systems and technology, fishing equipment, aquaculture, food preparation and packaging processes, distribution and logistics, wholesale seafood, as well as sustainability and general services.",
       "title_topic1": "Ally",
       "title_topic2": "The Mexican market",
@@ -55,6 +56,7 @@
       "desc_topic7":"World Seafood Industry invites industry professionals, distributors and buyer groups to attend the fair.",
       "platinum_partners":"Platinum Media Partners",
       "gold_partners":"Gold Media Partners",
+      "exhibitors":"EXHIBITORS",
       "about_fair":"International Fisheries and Aquaculture Exposition in Mexico.",
       "event_date":"May 15 to 17 2024 | Expo Guadalajara Jalisco",
       "aftershow_report":"Aftershow Report 2023",
@@ -99,7 +101,7 @@
     },
     "exhibitor-profile":{
       "title":"Profile Exhibitor",
-      "description1":"<strong>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
+      "description1":"<strong class='text-violet-700'>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
       "topic1":{
         "title":"Aquaculture, fishing",
         "sub_title":"AND AQUAPONICS TECHNOLOGY",
@@ -147,7 +149,7 @@
     "why-exhibit":{
         "title":"10 reasons to be an exhibitor at WSI",
         "item1":"<strong>Connect </strong> with more than 5,000 leading buyers and high purchasing power in the fisheries and aquaculture sector in Latin America.",
-        "item2":"<strong>Generate </strong> sales through the most important B2B business meeting in the region.",
+        "item2":"<strong>Generate </strong> sales through the most important business meeting in the region.",
         "item3":"<strong>Get </strong> an overview of the sector, find new markets and business opportunities.",
         "item4":"<strong>Find new </strong> partners, distributors, agents and strengthen your commercial network.",
         "item5":"<strong>Launch your products </strong> services or innovations through the robust program of conferences and workshops. ",
@@ -235,7 +237,7 @@
     "description1":"<strong class='text-violet-700'>World Seafood Industry </strong> will bring together the region’s experts in the fisheries and aquaculture sector, opening opportunities to exchange innovations, ideas, and close deals. In 3 days of trade show, combined with an extensive educational program and social events, you will have the opportunity to meet with industry leaders and gain regional and international expertise.",
     "item1":"<strong class='text-violet-700'>Discover innovations</strong> in fisheries and aquaculture technologies on the exhibition floor.",
 
-    "item2":"<strong class='text-violet-700'>Visit the first B2B platform</strong> for the fishing and aquaculture industry in Mexico.",
+    "item2":"<strong class='text-violet-700'>Visit the first platform</strong> for the fishing and aquaculture industry in Mexico.",
 
     "item3":"<strong class='text-violet-700'>Increase your knowledge</strong> with the lectures, pitches and workshops of the international educational program focused on the fishing and aquaculture market.",
 
@@ -267,5 +269,8 @@
     "item8":"Government and non-government organizations",
     "item9":"Academics",
     "item10":"Among others"
-  }
+  },
+  "widgetsocial":{        
+        "description": "Event held simultaneously with Agrotech México"
+    }
   }
