@@ -4,6 +4,7 @@ import { HeadHrefLangs } from 'astro-i18next/components'
 
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import WidgetSocial from '../components/WidgetSocial.astro'
 
 interface Props {
   title: string
@@ -39,6 +40,7 @@ const { title } = Astro.props
     </script>
   </head>
   <body>
+    <WidgetSocial/>
     <Header />
     <slot />
     <Footer />

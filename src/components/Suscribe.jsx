@@ -40,11 +40,11 @@ export function Suscribe({ description, suscribe_label, button}){
   
   return (
     <section
-        className="p-4 sm:p-6 lg:p-8"
+        className=""
         aria-label="Subscribe to the Flowbite newsletter">
-        <p className="mb-5 text-lg lg:text-left text-center font-medium text-white">
+        {/* <p className="mb-5 text-lg lg:text-left text-center font-medium text-white">
             {description}
-        </p>
+        </p> */}
         <div className="container mx-auto">
             <form
             className=" justify-center flex-col w-full md:flex-row"
