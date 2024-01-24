@@ -57,7 +57,7 @@ export default function LightGallery({ images }) {
   }
 
   return (
-    <div className='mt-10 grid gap-4 mx-12'>
+    <div className='mt-10 grid gap-4 lg:mx-12 mx-4'>
       <div className='grid gap-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4'>
         {getPaginatedImages().map((image, index) => (
           <div key={index} className='cursor-pointer'>
@@ -74,7 +74,7 @@ export default function LightGallery({ images }) {
 
       {isOpen && (
         <div className='fixed top-0 z-50 left-0 w-full h-full bg-black bg-opacity-90 grid place-content-center'>
-          <div className='w-full md:w-11/12 mx-auto'>
+          <div className='w-full md:w-11/12 mx-auto flex items-center justify-center h-full '>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -113,7 +113,7 @@ export default function LightGallery({ images }) {
               </svg>
             </a>
             <img
-              className='h-auto w-full'
+              className='w-[500px]'
               src={images[currentImage].src}
               alt={images[currentImage].alt}
             />
