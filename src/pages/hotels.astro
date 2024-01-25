@@ -8,7 +8,7 @@ changeLanguage("es");
 
 <Layout title={t("tab-title.hotels")}>
   <div class='mt-5 mb-5 container mx-auto'>
-    <h1 class='font-bold text-3xl mx-12'>{t('hotels.title')}</h1>
+    <h1 class='font-bold text-4xl mx-12 uppercase text-violet-700'>{t('hotels.title')}</h1>
     <p class='mt-3 mx-12 text-justify' set:html={t('hotels.description')} />
     <section class='mt-14 lg:mx-36 mx-8 hotels'>
       <div class='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
@@ -95,18 +95,18 @@ changeLanguage("es");
       </div>
     </section>
     <section class='mt-5 mx-12'>
-      <h2 class='font-bold text-2xl'>{t('hotels.about_gdl')}</h2>
+      <h2 class='font-bold text-2xl text-violet-700'>{t('hotels.about_gdl')}</h2>
       <p class='mt-3 text-justify' set:html={t('hotels.description_gdl')} />
-      <h2 class='mt-5 font-bold text-2xl'>{t('hotels.restaurants')}</h2>
+      <h2 class='mt-5 font-bold text-2xl text-violet-700'>{t('hotels.restaurants')}</h2>
       <p class='mt-3 text-justify' set:html={t('hotels.restaurants_desc')} />
-      <h2 class='mt-5 font-bold text-2xl'>{t('hotels.entertainment')}</h2>
+      <h2 class='mt-5 font-bold text-2xl text-violet-700'>{t('hotels.entertainment')}</h2>
       <p class='mt-3 text-justify' set:html={t('hotels.entertainment_desc')} />
-      <h2 class='mt-5 font-bold text-2xl'>{t('hotels.money')}</h2>
+      <h2 class='mt-5 font-bold text-2xl text-violet-700'>{t('hotels.money')}</h2>
       <p class='mt-3 text-justify' set:html={t('hotels.money_desc')} />
       <a
         href='https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=MXN'
         target='_blank'
-        class='inline-flex items-center px-3 py-2 mt-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'
+        class='inline-flex items-center px-3 py-2 mt-5 text-sm font-medium text-center text-white bg-violet-900 rounded-lg hover:bg-violet-500 focus:ring-0'
       >
         {t('hotels.link_currency')}
       </a>
