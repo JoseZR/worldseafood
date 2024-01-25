@@ -3,6 +3,18 @@
       "title": "World Seafood Industry 2024",
       "description": "World Seafood Industry will be a showcase for wholesalers and retailers in various segments, such as systems and technology, as well as fishing and aquaculture equipment."
     },
+    "tab-title":{
+      "about":" About | World Seafood Industry",
+      "contact":"Contact | WSI",
+      "exhibitor-profile":"Exhibitor Profile",
+      "why-exhibit":"Why Exhibit",
+      "services-exhibit":"Services Exhibit",
+      "rates":"Rates",
+      "hotels":"Hoteles",
+      "why-attend":"Why Attend",
+      "visitor-profile":"Visitor Profile",
+      "gallery":"Gallery | WSI"
+    },
     "menu":{
       "option1":{
         "title" : "ABOUT US",
@@ -100,7 +112,7 @@
       }   
     },
     "exhibitor-profile":{
-      "title":"Profile Exhibitor",
+      "title":"Exhibitor Profile",
       "description1":"<strong class='text-violet-700'>World Seafood Industry </strong> encourages industry professionals to exhibit their products and innovations at this international fisheries and aquaculture platform, which includes the following segments:",
       "topic1":{
         "title":"Aquaculture, fishing",
@@ -160,7 +172,7 @@
         "item10":"<strong>Obtain valuable </strong> information about your products or services in one-on-one meetings with visitors to your booth."
     },
     "exhibitor-services":{
-      "title":"Exhibitor services",
+      "title":"Exhibitor Services",
       "item1":"BANQUET KIT 2023",
       "item2":"GENERAL EXHIBITOR CONTRACTING FORMAT",
       "item3":"FOOD AND BEVERAGE PROCUREMENT FORM",

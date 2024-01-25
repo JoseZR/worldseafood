@@ -3,6 +3,18 @@
       "title": "World Seafood Industry 2024",
       "description": "World Seafood Industry será un destacado escaparate para mayoristas y minoristas en diversos segmentos, como sistemas y tecnología, así como equipos de pesca y acuicultura."
     },
+    "tab-title":{
+      "about":"Sobre World Seafood Industry",
+      "contact":"Contacto",
+      "exhibitor-profile":"Perfil del Expositor",
+      "why-exhibit":"Perfil del Expositor",
+      "services-exhibit":"Servicios al Expositor",
+      "rates":"Tarifas",
+      "hotels":"Hoteles",
+      "why-attend":"Por qué Asistirr",
+      "visitor-profile":"Perfil de Visitantes",
+      "gallery":"Galeria | WSI"
+    },
     "menu":{
       "option1":{
         "title" : "QUIÉNES SOMOS",
