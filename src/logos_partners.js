@@ -19,7 +19,7 @@ const exhibitors = [
     { link: 'https://mx.kaeser.com/', src: '/img/expositores/kaeser.webp', alt:'kaeser-compresores', width: 220},
     { link: 'https://pulmex.com/', src: '/img/expositores/Pulmex2000.webp', alt:'Pulmex2000', width: 220},
     { link: 'https://oxipez.com/', src: '/img/expositores/oxipez.webp', alt:'Oxipez', width: 220},
-    { link: 'http://www.transmarina.com/', src: '/img/expositores/transmarina.webp', alt:'Transmarina', width: 220 },
+    { link: 'https://www.transmarina.com.pe/', src: '/img/expositores/transmarinav2.webp', alt:'Transmarina Peru', width: 220 },
     { link: 'http://www.seaflyingfood.cn/page-35982.html', src: '/img/expositores/seaflyingfood.webp', alt:'Seaflyingfood', width: 220}
 ]
 
