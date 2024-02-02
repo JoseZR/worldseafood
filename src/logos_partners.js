@@ -12,6 +12,7 @@ const partners = [
     { link: 'https://www.horticultivos.com/home', src: '/img/partners/horticultivos.webp', alt:'Horticultivos', width: 100, height: 100 },
     { link: 'https://www.mmradio.com/', src: '/img/partners/multimedios.webp', alt:'Multimedmios', width: 220, height: 98 },
     { link: 'https://panoramaacuicola.com/', src: '/img/partners/panorama-acuicola.webp', alt:'Panorama Acuícola', width: 200, height: 62 },
+    { link: 'https://agroorganico.info/', src: '/img/partners/agroOrganico.webp', alt:'Agro Organíco', width: 200 },
 ]
 
 const exhibitors = [    
