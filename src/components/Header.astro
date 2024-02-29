@@ -1,313 +1,317 @@
 ---
-import i18next, { t } from "i18next";
-import { LanguageSelector } from "astro-i18next/components";
+import i18next, { t } from 'i18next'
+import { LanguageSelector } from 'astro-i18next/components'
 
-const lang = i18next.language;
-const base = lang === "es" ? "" : `/${lang}`;
+const lang = i18next.language
+const base = lang === 'es' ? '' : `/${lang}`
 ---
 
-<div class="">
+<div class=''>
   <div
-  id="sticky-banner"
-  tabindex="-1"
-  class="flex justify-between p-4 border-b bg-violet-950 border-violet-950"
->
-<div class='flex items-center mx-auto' >
-  <a href="/files/Comunicado_cancelación_Agrotec_WSI_2024_vf2.pdf" target='_blank'>
-    <div class='flex items-center mx-auto'>
-      <p
-        class='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'
-      >
-        <span
-          class='inline-flex p-1 me-3 bg-gray-200 rounded-full w-6 h-6 items-center justify-center flex-shrink-0'
-        >
-          <svg
-            class='w-3 h-3 text-black'
-            aria-hidden='true'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='currentColor'
-            viewBox='0 0 18 19'
-          >
-            <path
-              d='M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z'
-            ></path>
-          </svg>
-          <span class='sr-only'>Light bulb</span>
-        </span>
-        <i class='text-white font-bold'>{t('home.communication')}</i>
-      </p>
-    </div>
-  </a>
-</div>
-</div>
-<nav class="bg-violet-600 border-gray-600">
-  <div
-    class="flex flex-wrap items-center justify-between mx-auto px-10 lg:py-0 py-6 dark:border-white-700 shadow-lg"
+    id='sticky-banner'
+    tabindex='-1'
+    class='flex justify-between p-4 border-b bg-violet-950 border-violet-950'
   >
-    <a
-      href={`${base}/`}
-      class="flex items-center space-x-3 rtl:space-x-reverse"
-    >
-      <img
-        src="/img/worldseafood_logo.webp"
-        class="lg:w-[200px] w-[250px] h-15 py-2 mx-5"
-        alt="Flowbite Logo"
-      />
-    </a>
-    <div class="flex items-center md:order-2 button-language">
-      {
-        i18next.language === "en" ? (
-          <img
-            src="/img/flag-us.svg"
-            alt="us flag"
-            class="h-6 w-6 rounded-full mr-2"
-          />
-        ) : (
-          <img
-            src="/img/flag-mexico.svg"
-            alt="México flag"
-            class="h-6 w-6 rounded-full mr-2"
-          />
-        )
-      }
-      <LanguageSelector
-        showFlag={true}
-        aria-label="Select language"
-        class="block w-full p-2.5 rounded-lg bg-grey-200 border-grey-800 placeholder-green-400 text-black"
-      />
-    </div>
-    <button
-      data-collapse-toggle="navbar-dropdown"
-      type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-200 dark:focus:ring-gray-100"
-      aria-controls="navbar-dropdown"
-      aria-expanded="false"
-    >
-      <span class="sr-only">Open main menu</span>
-      <svg
-        class="w-5 h-5"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 17 14"
+    <div class='flex items-center mx-auto'>
+      <a
+        href='/files/Comunicado_cancelación_Agrotec_WSI_2024_vf2.pdf'
+        target='_blank'
       >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M1 1h15M1 7h15M1 13h15"></path>
-      </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-      <ul
-        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent w-full"
-      >
-        <li>
-          <button
-            id="dropdownNavbarLink"
-            data-dropdown-toggle="dropdownNavbar1"
-            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
-            >{t("menu.option1.title")}
-            <svg
-              class="w-2.5 h-2.5 ms-2.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
+        <div class='flex items-center mx-auto'>
+          <p
+            class='flex items-center text-sm font-normal text-gray-500 dark:text-gray-400'
+          >
+            <span
+              class='inline-flex p-1 me-3 bg-gray-200 rounded-full w-6 h-6 items-center justify-center flex-shrink-0'
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"></path>
-            </svg></button
-          >
-          <!-- Dropdown menu -->
-          <div
-            id="dropdownNavbar1"
-            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto"
-          >
-            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
-              <li>
-                <a
-                  href={`${base}/about`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option1.subMenu.option1")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://igeco.mx/history"
-                  target="_blank    "
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option1.subMenu.option2")}</a
-                >
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <button
-            id="dropdownNavbarLink"
-            data-dropdown-toggle="dropdownNavbar2"
-            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
-            >{t("menu.option2.title")}
-            <svg
-              class="w-2.5 h-2.5 ms-2.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
+              <svg
+                class='w-3 h-3 text-black'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='currentColor'
+                viewBox='0 0 18 19'
+              >
+                <path
+                  d='M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z'
+                ></path>
+              </svg>
+              <span class='sr-only'>Light bulb</span>
+            </span>
+            <i class='text-white font-bold text-2xl'
+              >{t('home.communication')}</i
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"></path></svg
-            ></button
-          >
-          <!-- Dropdown menu -->
-          <div
-            id="dropdownNavbar2"
-            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto"
-          >
-            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
-              <li>
-                <a
-                  href={`${base}/contact`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option1")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/exhibitor-profile`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option2")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/why-exhibit`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option3")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/services-exhibit`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option4")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={i18next.language === "en"
-                    ? "/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf"
-                    : "/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf"}
-                  target="_blank"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option5")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/files/floorplan_WSF_2024_120124_V3_240124.pdf"
-                  target="_blank"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option6")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/files/ASSpaceAgreement-WSI-2024_v240124.pdf"
-                  target="_blank"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option7")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/rates`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option8")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/toolkit`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option9")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/hotels`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option2.subMenu.option10")}</a
-                >
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <button
-            id="dropdownNavbarLink"
-            data-dropdown-toggle="dropdownNavbarVisitors"
-            class="flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white"
-            >{t("menu.option3.title")}
-            <svg
-              class="w-2.5 h-2.5 ms-2.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"></path>
-            </svg></button
-          >
-          <!-- Dropdown menu -->
-          <div
-            id="dropdownNavbarVisitors"
-            class="dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto"
-          >
-            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
-              <li>
-                <a
-                  href={`${base}/why-attend`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option3.subMenu.option1")}</a
-                >
-              </li>
-              <li>
-                <a
-                  href={`${base}/visitor-profile`}
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white"
-                  >{t("menu.option3.subMenu.option2")}</a
-                >
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a
-            href={`${base}/gallery`}
-            class="block py-2 px-3 text-gray-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-whitedark:hover:text-white md:dark:hover:bg-transparent"
-            >{t("menu.gallery")}</a
-          >
-        </li>
-      </ul>
+          </p>
+        </div>
+      </a>
     </div>
   </div>
-</nav>
+  <nav class='bg-violet-600 border-gray-600'>
+    <div
+      class='flex flex-wrap items-center justify-between mx-auto px-10 lg:py-0 py-6 dark:border-white-700 shadow-lg'
+    >
+      <a
+        href={`${base}/`}
+        class='flex items-center space-x-3 rtl:space-x-reverse'
+      >
+        <img
+          src='/img/worldseafood_logo.webp'
+          class='lg:w-[200px] w-[250px] h-15 py-2 mx-5'
+          alt='Flowbite Logo'
+        />
+      </a>
+      <div class='flex items-center md:order-2 button-language'>
+        {
+          i18next.language === 'en' ? (
+            <img
+              src='/img/flag-us.svg'
+              alt='us flag'
+              class='h-6 w-6 rounded-full mr-2'
+            />
+          ) : (
+            <img
+              src='/img/flag-mexico.svg'
+              alt='México flag'
+              class='h-6 w-6 rounded-full mr-2'
+            />
+          )
+        }
+        <LanguageSelector
+          showFlag={true}
+          aria-label='Select language'
+          class='block w-full p-2.5 rounded-lg bg-grey-200 border-grey-800 placeholder-green-400 text-black'
+        />
+      </div>
+      <button
+        data-collapse-toggle='navbar-dropdown'
+        type='button'
+        class='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-200 dark:focus:ring-gray-100'
+        aria-controls='navbar-dropdown'
+        aria-expanded='false'
+      >
+        <span class='sr-only'>Open main menu</span>
+        <svg
+          class='w-5 h-5'
+          aria-hidden='true'
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          viewBox='0 0 17 14'
+        >
+          <path
+            stroke='currentColor'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M1 1h15M1 7h15M1 13h15'></path>
+        </svg>
+      </button>
+      <div class='hidden w-full md:block md:w-auto' id='navbar-dropdown'>
+        <ul
+          class='flex flex-col font-medium p-4 md:p-0 mt-4 border border-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent w-full'
+        >
+          <li>
+            <button
+              id='dropdownNavbarLink'
+              data-dropdown-toggle='dropdownNavbar1'
+              class='flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white'
+              >{t('menu.option1.title')}
+              <svg
+                class='w-2.5 h-2.5 ms-2.5'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 10 6'
+              >
+                <path
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='m1 1 4 4 4-4'></path>
+              </svg></button
+            >
+            <!-- Dropdown menu -->
+            <div
+              id='dropdownNavbar1'
+              class='dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto'
+            >
+              <ul class='py-2 text-sm' aria-labelledby='dropdownLargeButton'>
+                <li>
+                  <a
+                    href={`${base}/about`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option1.subMenu.option1')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href='https://igeco.mx/history'
+                    target='_blank    '
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option1.subMenu.option2')}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button
+              id='dropdownNavbarLink'
+              data-dropdown-toggle='dropdownNavbar2'
+              class='flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white'
+              >{t('menu.option2.title')}
+              <svg
+                class='w-2.5 h-2.5 ms-2.5'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 10 6'
+              >
+                <path
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='m1 1 4 4 4-4'></path></svg
+              ></button
+            >
+            <!-- Dropdown menu -->
+            <div
+              id='dropdownNavbar2'
+              class='dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto'
+            >
+              <ul class='py-2 text-sm' aria-labelledby='dropdownLargeButton'>
+                <li>
+                  <a
+                    href={`${base}/contact`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option1')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/exhibitor-profile`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option2')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/why-exhibit`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option3')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/services-exhibit`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option4')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={i18next.language === 'en'
+                      ? '/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf'
+                      : '/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf'}
+                    target='_blank'
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option5')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href='/files/floorplan_WSF_2024_120124_V3_240124.pdf'
+                    target='_blank'
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option6')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href='/files/ASSpaceAgreement-WSI-2024_v240124.pdf'
+                    target='_blank'
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option7')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/rates`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option8')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/toolkit`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option9')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/hotels`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option2.subMenu.option10')}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button
+              id='dropdownNavbarLink'
+              data-dropdown-toggle='dropdownNavbarVisitors'
+              class='flex items-center justify-between w-full py-2 px-3 rounded md:hover:bg-transparent border-b lg:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent text-white'
+              >{t('menu.option3.title')}
+              <svg
+                class='w-2.5 h-2.5 ms-2.5'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 10 6'
+              >
+                <path
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='m1 1 4 4 4-4'></path>
+              </svg></button
+            >
+            <!-- Dropdown menu -->
+            <div
+              id='dropdownNavbarVisitors'
+              class='dropdown z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-auto'
+            >
+              <ul class='py-2 text-sm' aria-labelledby='dropdownLargeButton'>
+                <li>
+                  <a
+                    href={`${base}/why-attend`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option3.subMenu.option1')}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={`${base}/visitor-profile`}
+                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-violet-400 dark:hover:text-white'
+                    >{t('menu.option3.subMenu.option2')}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              href={`${base}/gallery`}
+              class='block py-2 px-3 text-gray-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-whitedark:hover:text-white md:dark:hover:bg-transparent'
+              >{t('menu.gallery')}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
-<style>
-</style>
+<style></style>
