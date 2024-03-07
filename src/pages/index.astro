@@ -7,242 +7,249 @@ import { MarqueeReact } from "../components/MarqueeReact.jsx";
 changeLanguage("es");
 ---
 
-<Layout title="WORLD SEAFOOD INDUSTRY">
+<Layout title='WORLD SEAFOOD INDUSTRY'>
   <main>
-    <section class="relative h-screen">
+    <section class='relative h-screen'>
       <video
-        class="absolute w-screen h-screen z-[-1]"
+        class='absolute w-screen h-screen z-[-1]'
         muted
         loop
         autoplay
         playsinline
       >
-        <source src="/worldseafood_2024.mp4" type="video/mp4" />
-        <img src="/img/worldseafood.webp" alt="worldseafood-video">
+        <source src='/worldseafood_2024.mp4' type='video/mp4' />
+        <img src='/img/worldseafood.webp' alt='worldseafood-video' />
       </video>
-      <div class="flex items-center h-full">
+      <div class='flex items-center h-full'>
         <div
-          class="container mx-auto px-4"
-          style="text-shadow: 4px 4px 4px black;"
+          class='container mx-auto px-4'
+          style='text-shadow: 4px 4px 4px black;'
         >
-          <p class="lg:text-7xl text-5xl font-bold text-white lg:text-left text-center">
+          <p
+            class='lg:text-7xl text-5xl font-bold text-white lg:text-left text-center'
+          >
             WORLD <br />SEAFOOD <br /> INDUSTRY
           </p>
-          <p class="text-white font-bold home-text-agro text-3xl pt-10 lg:text-left text-center">
-            {t("home.about_fair")}
+          <p
+            class='text-white font-bold home-text-agro text-3xl pt-10 lg:text-left text-center'
+          >
+            {t('home.about_fair')}
           </p>
-          <p class="text-white font-bold home-text-agro text-3xl pt-2 lg:text-left text-center">
+          {
+            /* <p class="text-white font-bold home-text-agro text-3xl pt-2 lg:text-left text-center">
             {t("home.event_date")}
-          </p>
+          </p>*/
+          }
           <img
-            src="/img/logo_igeco_deutsche.webp"
-            alt="Igeco"
-            height="42"
-            class="filter-shadow pt-16"
+            src='/img/logo_igeco_deutsche.webp'
+            alt='Igeco'
+            height='42'
+            class='filter-shadow pt-16'
           />
         </div>
       </div>
     </section>
-    <div class="grid place-items-center">
-      <div class="grid sm:flex  flex-wrap justify-center lg:my-20 my-6">
+    {
+      /* <div class='grid place-items-center'>
+      <div class='grid sm:flex flex-wrap justify-center lg:my-20 my-6'>
         <a
-          class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
-          href={i18next.language === "en"
-            ? "/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf"
-            : "/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf"}
-          target="_blank"
+          class='text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center'
+          href={i18next.language === 'en'
+            ? '/files/WORLDSEAFOOD_FACTSHEET_EN_v2_081224.pdf'
+            : '/files/WORLDSEAFOOD_FACTSHEET_ES_v2_081223.pdf'}
+          target='_blank'
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='w-6 h-6'
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'
             ></path>
           </svg> Factsheet WSI 2024
         </a>
         <a
-          class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
-          href={i18next.language === "en"
-            ? "/files/AFTERSHOW_WSI_en.pdf"
-            : "/files/AFTERSHOW_WSI_es.pdf"}
-          target="_blank"
+          class='text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center'
+          href={i18next.language === 'en'
+            ? '/files/AFTERSHOW_WSI_en.pdf'
+            : '/files/AFTERSHOW_WSI_es.pdf'}
+          target='_blank'
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="30"
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            width='30'
             ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z'
             ></path></svg
           >
-          {t("home.aftershow_report")}
+          {t('home.aftershow_report')}
         </a>
         <a
-          class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
-          href="/files/ASSpaceAgreement-WSI-2024_v240124.pdf"
-          target="_blank"
+          class='text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center'
+          href='/files/ASSpaceAgreement-WSI-2024_v240124.pdf'
+          target='_blank'
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='w-6 h-6'
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'
             ></path>
           </svg>
-          {t("home.contract")}
+          {t('home.contract')}
         </a>
         <a
-          class="text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center"
-          href="/files/floorplan_WSF_2024_120124_V3_240124.pdf"
-          target="_blank"
+          class='text-white font-bold bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 hover:bg-gradient-to-br focus:outline-none rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-center'
+          href='/files/floorplan_WSF_2024_120124_V3_240124.pdf'
+          target='_blank'
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='w-6 h-6'
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'
             ></path>
           </svg>
-          {t("home.floor_plan")}
+          {t('home.floor_plan')}
         </a>
       </div>
       <div
-        class="lg:flex flex-wrap items-center justify-center lg:w-auto bg-violet-700 lg:px-16 py-4 lg:h-[750px]"
+        class='lg:flex flex-wrap items-center justify-center lg:w-auto bg-violet-700 lg:px-16 py-4 lg:h-[750px]'
       >
-        <div class="w-full sm:w-2/5 p-4">
-          <p class="text-4xl uppercase font-bold text-white pb-6">
-            {t("home.title")}
+        <div class='w-full sm:w-2/5 p-4'>
+          <p class='text-4xl uppercase font-bold text-white pb-6'>
+            {t('home.title')}
           </p>
-          <p class="text-xl text-justify text-violet-100">
-            {t("home.description1")}
+          <p class='text-xl text-justify text-violet-100'>
+            {t('home.description1')}
           </p>
           <br />
-          <p class="text-xl text-justify text-violet-100">
-            {t("home.description2")}
+          <p class='text-xl text-justify text-violet-100'>
+            {t('home.description2')}
           </p>
         </div>
-        <div class="w-full sm:w-3/5 p-4">
+        <div class='w-full sm:w-3/5 p-4'>
           <img
-            src="/img/world-sea-food-Iindustry_slider2.webp"
-            alt="world-seafood-industry"
+            src='/img/world-sea-food-Iindustry_slider2.webp'
+            alt='world-seafood-industry'
           />
         </div>
       </div>
       <div
-        class="flex flex-wrap items-center justify-center lg:w-auto lg:px-36 py-4"
+        class='flex flex-wrap items-center justify-center lg:w-auto lg:px-36 py-4'
       >
-        <div class="w-full p-4 flex flex-wrap">
-          <div class="w-full sm:w-1/6 flex lg:justify-center">
+        <div class='w-full p-4 flex flex-wrap'>
+          <div class='w-full sm:w-1/6 flex lg:justify-center'>
             <svg
-              width="64px"
-              height="64px"
-              viewBox="0 0 32 32"
-              id="svg5"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#000000"
-              ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
-                <defs id="defs2"></defs>
-                <g id="layer1" transform="translate(-12,-100)">
+              width='64px'
+              height='64px'
+              viewBox='0 0 32 32'
+              id='svg5'
+              version='1.1'
+              xmlns='http://www.w3.org/2000/svg'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='#000000'
+              ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
+                id='SVGRepo_tracerCarrier'
+                stroke-linecap='round'
+                stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'>
+                <defs id='defs2'></defs>
+                <g id='layer1' transform='translate(-12,-100)'>
                   <path
-                    d="m 22,117.69531 a 1,1 0 0 0 -1,1 V 129 a 1.0001,1.0001 0 0 0 1.447266,0.89453 L 28,127.11719 l 5.552734,2.77734 A 1.0001,1.0001 0 0 0 35,129 v -10.30469 a 1,1 0 0 0 -1,-1 1,1 0 0 0 -1,1 v 8.6875 l -4.552734,-2.27734 a 1.0001,1.0001 0 0 0 -0.894532,0 L 23,127.38281 v -8.6875 a 1,1 0 0 0 -1,-1 z"
-                    id="path5345"
-                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"
+                    d='m 22,117.69531 a 1,1 0 0 0 -1,1 V 129 a 1.0001,1.0001 0 0 0 1.447266,0.89453 L 28,127.11719 l 5.552734,2.77734 A 1.0001,1.0001 0 0 0 35,129 v -10.30469 a 1,1 0 0 0 -1,-1 1,1 0 0 0 -1,1 v 8.6875 l -4.552734,-2.27734 a 1.0001,1.0001 0 0 0 -0.894532,0 L 23,127.38281 v -8.6875 a 1,1 0 0 0 -1,-1 z'
+                    id='path5345'
+                    style='color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none'
                   ></path>
                   <path
-                    d="m 28,102 c -5.510997,0 -10.000002,4.489 -10,10 -2e-6,5.511 4.489003,10 10,10 5.510997,0 10.000002,-4.489 10,-10 2e-6,-5.511 -4.489003,-10 -10,-10 z m 0,2 c 4.430118,0 8.000001,3.56988 8,8 10e-7,4.43012 -3.569882,8 -8,8 -4.430118,0 -8.000001,-3.56988 -8,-8 -1e-6,-4.43012 3.569882,-8 8,-8 z"
-                    id="circle5330"
-                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"
+                    d='m 28,102 c -5.510997,0 -10.000002,4.489 -10,10 -2e-6,5.511 4.489003,10 10,10 5.510997,0 10.000002,-4.489 10,-10 2e-6,-5.511 -4.489003,-10 -10,-10 z m 0,2 c 4.430118,0 8.000001,3.56988 8,8 10e-7,4.43012 -3.569882,8 -8,8 -4.430118,0 -8.000001,-3.56988 -8,-8 -1e-6,-4.43012 3.569882,-8 8,-8 z'
+                    id='circle5330'
+                    style='color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none'
                   ></path>
                   <path
-                    d="m 20.423828,47.148437 a 1.2290729,1.2290729 0 0 0 -0.890625,0.105469 L 16,49.150391 12.466797,47.253906 a 1.2290729,1.2290729 0 0 0 -1.791016,1.300781 l 0.710938,3.947266 -2.8945315,2.773438 a 1.2290729,1.2290729 0 0 0 0.6835938,2.105468 l 3.9726567,0.542969 1.74414,3.611328 a 1.2290729,1.2290729 0 0 0 2.214844,0 l 1.74414,-3.611328 3.972657,-0.542969 a 1.2290729,1.2290729 0 0 0 0.683593,-2.105468 l -2.894531,-2.773438 0.710938,-3.947266 a 1.2290729,1.2290729 0 0 0 -0.900391,-1.40625 z m -6.876953,3.47461 1.871094,1.003906 a 1.2290729,1.2290729 0 0 0 1.164062,0 l 1.871094,-1.003906 -0.376953,2.091797 a 1.2290729,1.2290729 0 0 0 0.359375,1.105468 l 1.533203,1.470704 -2.103516,0.287109 a 1.2290729,1.2290729 0 0 0 -0.941406,0.681641 L 16,58.171875 15.076172,56.259766 a 1.2290729,1.2290729 0 0 0 -0.941406,-0.681641 l -2.103516,-0.287109 1.533203,-1.470704 a 1.2290729,1.2290729 0 0 0 0.359375,-1.105468 z"
-                    id="path5332"
-                    style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none"
-                    transform="matrix(-0.8149634,0,0,-0.81244284,41.039413,156.41496)"
+                    d='m 20.423828,47.148437 a 1.2290729,1.2290729 0 0 0 -0.890625,0.105469 L 16,49.150391 12.466797,47.253906 a 1.2290729,1.2290729 0 0 0 -1.791016,1.300781 l 0.710938,3.947266 -2.8945315,2.773438 a 1.2290729,1.2290729 0 0 0 0.6835938,2.105468 l 3.9726567,0.542969 1.74414,3.611328 a 1.2290729,1.2290729 0 0 0 2.214844,0 l 1.74414,-3.611328 3.972657,-0.542969 a 1.2290729,1.2290729 0 0 0 0.683593,-2.105468 l -2.894531,-2.773438 0.710938,-3.947266 a 1.2290729,1.2290729 0 0 0 -0.900391,-1.40625 z m -6.876953,3.47461 1.871094,1.003906 a 1.2290729,1.2290729 0 0 0 1.164062,0 l 1.871094,-1.003906 -0.376953,2.091797 a 1.2290729,1.2290729 0 0 0 0.359375,1.105468 l 1.533203,1.470704 -2.103516,0.287109 a 1.2290729,1.2290729 0 0 0 -0.941406,0.681641 L 16,58.171875 15.076172,56.259766 a 1.2290729,1.2290729 0 0 0 -0.941406,-0.681641 l -2.103516,-0.287109 1.533203,-1.470704 a 1.2290729,1.2290729 0 0 0 0.359375,-1.105468 z'
+                    id='path5332'
+                    style='color:#000000;fill:#000000;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none'
+                    transform='matrix(-0.8149634,0,0,-0.81244284,41.039413,156.41496)'
                   ></path>
                 </g>
               </g></svg
             >
           </div>
-          <div class="w-full sm:w-5/6">
-            <p class="text-2xl font-bold mb-4">{t("home.title_topic2")}</p>
-            <p class="text-justify text-lg">{t("home.desc_topic2")}</p>
+          <div class='w-full sm:w-5/6'>
+            <p class='text-2xl font-bold mb-4'>{t('home.title_topic2')}</p>
+            <p class='text-justify text-lg'>{t('home.desc_topic2')}</p>
           </div>
         </div>
-        <div class="w-full p-4 flex flex-wrap">
-          <div class="w-full sm:w-1/2 p-4 flex flex-wrap">
-            <div class="w-full sm:w-1/3 px-6 flex lg:justify-center">
+        <div class='w-full p-4 flex flex-wrap'>
+          <div class='w-full sm:w-1/2 p-4 flex flex-wrap'>
+            <div class='w-full sm:w-1/3 px-6 flex lg:justify-center'>
               <svg
-                fill="#000000"
-                height="64px"
-                width="64px"
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 487.4 487.4"
-                xml:space="preserve"
-                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                fill='#000000'
+                height='64px'
+                width='64px'
+                version='1.1'
+                id='Capa_1'
+                xmlns='http://www.w3.org/2000/svg'
+                xmlns:xlink='http://www.w3.org/1999/xlink'
+                viewBox='0 0 487.4 487.4'
+                xml:space='preserve'
+                ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
+                  id='SVGRepo_tracerCarrier'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'>
                   <g>
                     <path
-                      d="M378.6,107.39c9.9,0,19.6-2.6,28.1-7.7l80.7-47.7v-22.3l-90.8,52.9c-6.9,4-14.7,6.1-22.6,6l-120.2-1.4 c-6-2.2-10.8-3.6-12.6-4.3c-37.6-8.4-67-5.1-87,0.3c-15,4-31,2.5-45.2-4l-109-50v199.8l11.3,6.2c16.7,9.1,30,23.2,38.3,40.3 l-6.4,5.2c-17.2,12.5-20.9,36.7-9.6,53.8c6.3,8.3,15.2,13.6,25.4,15.4c1.2,0.1,3,0.2,4.3,0.2c3.7,0.2,7.3-0.2,10.4-0.7 c0.2,8.6,2.2,16,7.3,23c6.8,9.5,17.6,13.8,29.2,14.4c3,0.2,6.1,0.3,8.5,0.5c-1.1,9.1,1.5,18.4,7.2,26c6.3,8.3,15.2,13.6,25.4,15.4 c1.2,0.1,3,0.2,4.3,0.2c9.1,0.5,17.8-2.1,24.8-7.2l3.8-2.9c0.9,5.5,2.5,10.5,5.9,15c5.1,7,12.8,11.7,21.9,13.4 c1.2,0.1,2.4,0.1,3.7,0.2c7.3,0.4,14.7-1.7,21.1-6.2h0.6l4.5,6.3c7.9,11.4,24.3,14.1,35.7,6.2c9.5-6.8,13.3-20.1,9-30.7l0.8,1.2 c7.5,11.1,21.7,15.9,34.1,10.8c13.7-5.6,19.2-20.4,15.6-33.1c9.2,10.3,25,12.3,36.4,4.4l0.6-0.6c11.4-7.9,14.7-23,8.6-35 c9.9,9.1,25.7,10.5,37.1,2.6c13.3-9.7,16.8-28.4,7.1-41.8l-14.2-20.3l30.9-36c8.1-9.5,17.8-17.5,28.6-23.8l15.2-8.8v-23.8l-21,11.9 c-12,6.8-22.8,15.6-31.8,26.1l-33.2,38.5c-9.9-9.1-25.7-10.5-37.1-2.6c-13.3,9.7-16.8,28.4-7.1,41.8l0.5,1.3h-0.6 c-9.4-6.6-22.2-7.3-32.3-0.5l-0.6,0.6c-8.9,6.2-13.1,17-11.2,27.5l-3.2,2.3c-8.9-4.7-19.9-4.7-28.8,1.5c-8.2,5.7-12.4,15.8-11.7,25 l-8.8,5.6c-6.6-1.6-14-0.1-19.7,3.8c-7,5.1-11.1,13.5-10.9,21.4l-4.4,2.8c-2.6,2.3-6.9,3.3-10.5,2.5s-7.2-2.8-9.5-6 c-2.3-2.6-3.3-6.9-2.5-10.5s2.8-7.2,6-9.5l47.7-35.9c2.5-1.7,3.9-4.1,4-7.1c0.3-5.5-4.4-10.2-9.8-10.2c-2.1,0-3.8,0.5-5.6,1.5 l-76.2,55.2c-4.4,2.8-9.4,4.4-14.8,3.5c-5.4-0.9-10.2-3.6-13-8c-6.3-8.3-4.4-21,4.5-27.2l90.8-64.8c2-1.8,3.4-4.3,3.4-7.6 c0.1-5.2-4.2-9.6-9.4-9.8c-3-0.1-5.4,1-7.4,3.3l-88.9,64.3c-2.5,1.1-3.8,2.9-5.7,4.6c-10.7,6.8-26.5,5.3-32.2-2.3 c-5.7-8.2-4.5-19.2,2.6-26.1l8.9-6.2l98.8-67.4c2.5-1.7,3.9-4.1,4-7.1c0.2-3.3-1.4-6.4-4.1-8.3c-3.5-2.5-7-2.6-10.7-0.4 l-105.8,71.9c-0.7,1.2-1.9,1.7-2.6,2.3l-10.2,7.4c-8.3,6.3-21,4.4-27.2-4.5c-6.3-8.3-4.4-21,4.5-27.2l199.5-146.9 c16,9.4,27.8,28.3,27.8,28.3c19.6,61.4,44,61.9,58.8,54.5c7.7-3.8,11.2-12.9,8.5-21.1c-7.8-23.7-12.3-69.6-12.3-69.6 c-5.5-11.9-23.1-24.4-42.7-34.6l64.1,1L378.6,107.39z"
+                      d='M378.6,107.39c9.9,0,19.6-2.6,28.1-7.7l80.7-47.7v-22.3l-90.8,52.9c-6.9,4-14.7,6.1-22.6,6l-120.2-1.4 c-6-2.2-10.8-3.6-12.6-4.3c-37.6-8.4-67-5.1-87,0.3c-15,4-31,2.5-45.2-4l-109-50v199.8l11.3,6.2c16.7,9.1,30,23.2,38.3,40.3 l-6.4,5.2c-17.2,12.5-20.9,36.7-9.6,53.8c6.3,8.3,15.2,13.6,25.4,15.4c1.2,0.1,3,0.2,4.3,0.2c3.7,0.2,7.3-0.2,10.4-0.7 c0.2,8.6,2.2,16,7.3,23c6.8,9.5,17.6,13.8,29.2,14.4c3,0.2,6.1,0.3,8.5,0.5c-1.1,9.1,1.5,18.4,7.2,26c6.3,8.3,15.2,13.6,25.4,15.4 c1.2,0.1,3,0.2,4.3,0.2c9.1,0.5,17.8-2.1,24.8-7.2l3.8-2.9c0.9,5.5,2.5,10.5,5.9,15c5.1,7,12.8,11.7,21.9,13.4 c1.2,0.1,2.4,0.1,3.7,0.2c7.3,0.4,14.7-1.7,21.1-6.2h0.6l4.5,6.3c7.9,11.4,24.3,14.1,35.7,6.2c9.5-6.8,13.3-20.1,9-30.7l0.8,1.2 c7.5,11.1,21.7,15.9,34.1,10.8c13.7-5.6,19.2-20.4,15.6-33.1c9.2,10.3,25,12.3,36.4,4.4l0.6-0.6c11.4-7.9,14.7-23,8.6-35 c9.9,9.1,25.7,10.5,37.1,2.6c13.3-9.7,16.8-28.4,7.1-41.8l-14.2-20.3l30.9-36c8.1-9.5,17.8-17.5,28.6-23.8l15.2-8.8v-23.8l-21,11.9 c-12,6.8-22.8,15.6-31.8,26.1l-33.2,38.5c-9.9-9.1-25.7-10.5-37.1-2.6c-13.3,9.7-16.8,28.4-7.1,41.8l0.5,1.3h-0.6 c-9.4-6.6-22.2-7.3-32.3-0.5l-0.6,0.6c-8.9,6.2-13.1,17-11.2,27.5l-3.2,2.3c-8.9-4.7-19.9-4.7-28.8,1.5c-8.2,5.7-12.4,15.8-11.7,25 l-8.8,5.6c-6.6-1.6-14-0.1-19.7,3.8c-7,5.1-11.1,13.5-10.9,21.4l-4.4,2.8c-2.6,2.3-6.9,3.3-10.5,2.5s-7.2-2.8-9.5-6 c-2.3-2.6-3.3-6.9-2.5-10.5s2.8-7.2,6-9.5l47.7-35.9c2.5-1.7,3.9-4.1,4-7.1c0.3-5.5-4.4-10.2-9.8-10.2c-2.1,0-3.8,0.5-5.6,1.5 l-76.2,55.2c-4.4,2.8-9.4,4.4-14.8,3.5c-5.4-0.9-10.2-3.6-13-8c-6.3-8.3-4.4-21,4.5-27.2l90.8-64.8c2-1.8,3.4-4.3,3.4-7.6 c0.1-5.2-4.2-9.6-9.4-9.8c-3-0.1-5.4,1-7.4,3.3l-88.9,64.3c-2.5,1.1-3.8,2.9-5.7,4.6c-10.7,6.8-26.5,5.3-32.2-2.3 c-5.7-8.2-4.5-19.2,2.6-26.1l8.9-6.2l98.8-67.4c2.5-1.7,3.9-4.1,4-7.1c0.2-3.3-1.4-6.4-4.1-8.3c-3.5-2.5-7-2.6-10.7-0.4 l-105.8,71.9c-0.7,1.2-1.9,1.7-2.6,2.3l-10.2,7.4c-8.3,6.3-21,4.4-27.2-4.5c-6.3-8.3-4.4-21,4.5-27.2l199.5-146.9 c16,9.4,27.8,28.3,27.8,28.3c19.6,61.4,44,61.9,58.8,54.5c7.7-3.8,11.2-12.9,8.5-21.1c-7.8-23.7-12.3-69.6-12.3-69.6 c-5.5-11.9-23.1-24.4-42.7-34.6l64.1,1L378.6,107.39z'
                     ></path>
                   </g>
                 </g></svg
               >
             </div>
-            <div class="w-full sm:w-2/3">
-              <p class="text-2xl font-bold mb-4">{t("home.title_topic1")}</p>
-              <p class="text-justify text-lg">{t("home.desc_topic1")}</p>
+            <div class='w-full sm:w-2/3'>
+              <p class='text-2xl font-bold mb-4'>{t('home.title_topic1')}</p>
+              <p class='text-justify text-lg'>{t('home.desc_topic1')}</p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 p-4 flex flex-wrap">
-            <div class="w-full sm:w-1/3 px-6 flex lg:justify-center">
+          <div class='w-full sm:w-1/2 p-4 flex flex-wrap'>
+            <div class='w-full sm:w-1/3 px-6 flex lg:justify-center'>
               <svg
-                width="64px"
-                height="64px"
-                viewBox="0 0 24 24"
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#000000"
-                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
+                width='64px'
+                height='64px'
+                viewBox='0 0 24 24'
+                id='Layer_1'
+                data-name='Layer 1'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='#000000'
+                ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
+                  id='SVGRepo_tracerCarrier'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'
                   ><defs
                     ><style>
                       .cls-1 {
@@ -252,69 +259,140 @@ changeLanguage("es");
                         stroke-width: 1.91px;
                       }
                     </style></defs
-                  ><circle class="cls-1" cx="12" cy="3.41" r="1.91"
+                  ><circle class='cls-1' cx='12' cy='3.41' r='1.91'
                   ></circle><path
-                    class="cls-1"
-                    d="M12,5.32v.21a8.5,8.5,0,0,0,3.49,6.7,5.73,5.73,0,1,1-9.22,4.54"
+                    class='cls-1'
+                    d='M12,5.32v.21a8.5,8.5,0,0,0,3.49,6.7,5.73,5.73,0,1,1-9.22,4.54'
                   ></path><polyline
-                    class="cls-1"
-                    points="9.14 16.77 6.27 13.91 6.27 16.77"></polyline></g
+                    class='cls-1'
+                    points='9.14 16.77 6.27 13.91 6.27 16.77'></polyline></g
                 ></svg
               >
             </div>
-            <div class="w-full sm:w-2/3">
-              <p class="text-2xl font-bold mb-4">{t("home.title_topic3")}</p>
-              <p class="text-justify text-lg">{t("home.desc_topic3")}</p>
+            <div class='w-full sm:w-2/3'>
+              <p class='text-2xl font-bold mb-4'>{t('home.title_topic3')}</p>
+              <p class='text-justify text-lg'>{t('home.desc_topic3')}</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex items-center justify-center">
-      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
-        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-          <div class="h-96 w-72 ">
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/img/world_sea_food_Industry_slider1.webp" alt="world-seafood-industry" />
+    </div>*/
+    }
+    <div class='flex items-center justify-center'>
+      <div class='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4'>
+        <div
+          class='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30'
+        >
+          <div class='h-96 w-72'>
+            <img
+              class='h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125'
+              src='/img/world_sea_food_Industry_slider1.webp'
+              alt='world-seafood-industry'
+            />
           </div>
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl font-bold text-white">{t("home.topic1.title")}</h1>
-            <p class="mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{t("home.topic1.description")}</p>
+          <div
+            class='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70'
+          >
           </div>
-        </div>
-        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-          <div class="h-96 w-72">
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/img/world-sea-food-Iindustry_slider2.webp" alt="world-seafood-industry" />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl font-bold text-white">{t("home.topic2.title")}</h1>
-            <p class="mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{t("home.topic2.description")}</p>
-          </div>
-        </div>
-        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-          <div class="h-96 w-72">
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/img/world_sea_food_Industry_slider3.webp" alt="world-seafood-industry" />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl font-bold text-white">{t("home.topic3.title")}</h1>
-            <p class="mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{t("home.topic3.description")}</p>
+          <div
+            class='absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0'
+          >
+            <h1 class='font-dmserif text-3xl font-bold text-white'>
+              {t('home.topic1.title')}
+            </h1>
+            <p
+              class='mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100'
+            >
+              {t('home.topic1.description')}
+            </p>
           </div>
         </div>
-        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-          <div class="h-96 w-72">
-            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="/img/world_sea_food_Industry_slider4.webp" alt="world-seafood-industry" />
+        <div
+          class='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30'
+        >
+          <div class='h-96 w-72'>
+            <img
+              class='h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125'
+              src='/img/world-sea-food-Iindustry_slider2.webp'
+              alt='world-seafood-industry'
+            />
           </div>
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl font-bold text-white">{t("home.topic4.title")}</h1>
-            <p class="mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{t("home.topic4.description")}</p>
+          <div
+            class='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70'
+          >
+          </div>
+          <div
+            class='absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0'
+          >
+            <h1 class='font-dmserif text-3xl font-bold text-white'>
+              {t('home.topic2.title')}
+            </h1>
+            <p
+              class='mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100'
+            >
+              {t('home.topic2.description')}
+            </p>
+          </div>
+        </div>
+        <div
+          class='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30'
+        >
+          <div class='h-96 w-72'>
+            <img
+              class='h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125'
+              src='/img/world_sea_food_Industry_slider3.webp'
+              alt='world-seafood-industry'
+            />
+          </div>
+          <div
+            class='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70'
+          >
+          </div>
+          <div
+            class='absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0'
+          >
+            <h1 class='font-dmserif text-3xl font-bold text-white'>
+              {t('home.topic3.title')}
+            </h1>
+            <p
+              class='mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100'
+            >
+              {t('home.topic3.description')}
+            </p>
+          </div>
+        </div>
+        <div
+          class='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30'
+        >
+          <div class='h-96 w-72'>
+            <img
+              class='h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125'
+              src='/img/world_sea_food_Industry_slider4.webp'
+              alt='world-seafood-industry'
+            />
+          </div>
+          <div
+            class='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70'
+          >
+          </div>
+          <div
+            class='absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0'
+          >
+            <h1 class='font-dmserif text-3xl font-bold text-white'>
+              {t('home.topic4.title')}
+            </h1>
+            <p
+              class='mt-4 mb-8 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100'
+            >
+              {t('home.topic4.description')}
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <p class='mt-8 mb-14 font-bold text-3xl text-center uppercase text-violet-700'>
+    <p
+      class='mt-8 mb-14 font-bold text-3xl text-center uppercase text-violet-700'
+    >
       {t('home.organized_by')}
     </p>
     <div class='sm:flex grid gap-8 justify-center justify-items-center'>
@@ -325,7 +403,7 @@ changeLanguage("es");
           height={82}
           loading='lazy'
           alt='italianExhibitionGroup'
-          class="mx-8"
+          class='mx-8'
         />
       </a>
       <a href='https://www.messe.de/en/' target='_blank' rel='noreferrer'>
@@ -335,15 +413,19 @@ changeLanguage("es");
           height={54}
           loading='lazy'
           alt='deutscheMesse'
-          class="mx-8"
+          class='mx-8'
         />
       </a>
     </div>
-    <p class='mt-8 mb-4 font-bold text-3xl text-center uppercase text-violet-700'>
-      {t("home.exhibitors")}
+    <p
+      class='mt-8 mb-4 font-bold text-3xl text-center uppercase text-violet-700'
+    >
+      {t('home.exhibitors')}
     </p>
     <MarqueeReact images={exhibitors} client:only />
-    <p class='mt-8 mb-4 font-bold text-3xl text-center uppercase text-violet-700'>
+    <p
+      class='mt-8 mb-4 font-bold text-3xl text-center uppercase text-violet-700'
+    >
       Media Partners
     </p>
     <MarqueeReact images={partners} direction='left' client:only />

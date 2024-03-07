@@ -1,161 +1,171 @@
 ---
-import i18next, { t } from "i18next";
-import { Suscribe } from "./Suscribe";
-import { LanguageSelector } from "astro-i18next/components";
+import i18next, { t } from 'i18next'
+import { Suscribe } from './Suscribe'
+import { LanguageSelector } from 'astro-i18next/components'
 
-
-const lang = i18next.language;
-const base = lang === "es" ? "" : `/${lang}`;
+const lang = i18next.language
+const base = lang === 'es' ? '' : `/${lang}`
 ---
 
-<footer class="bg-white dark:bg-transparent  bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 focus:ring-violet-900 dark:focus:ring-violet-800">
-  <div class="mx-auto w-full max-w-screen-xl p-2 py-6 lg:px-10 lg:py-8">
-    <div class="lg:flex grid place-items-center items-start md:justify-between justify-evenly gap-12">
-      <div class=" lg:w-1/4">
-        <div class="grid items-center justify-center">
-          <a href={`${base}/`} class="flex items-center space-x-3 rtl:space-x-reverse mb-8">
+<footer
+  class='bg-white dark:bg-transparent bg-gradient-to-r from-violet-500 via-violet-600 to-violet-800 focus:ring-violet-900'
+>
+  <div class='mx-auto w-full max-w-screen-xl p-2 py-6 lg:px-10 lg:py-8'>
+    <div
+      class='lg:flex grid place-items-center items-start md:justify-between justify-evenly gap-12'
+    >
+      <div class='lg:w-1/4'>
+        <div class='grid items-center justify-center'>
+          <a
+            href={`${base}/`}
+            class='flex items-center space-x-3 rtl:space-x-reverse mb-8'
+          >
             <img
-              src="/img/worldseafood_logo.webp"
-              class="w-[200px] lg:w-[250px] lg:h-15 lg:py-2"
-              alt="Worldseafood"
+              src='/img/worldseafood_logo.webp'
+              class='w-[200px] lg:w-[250px] lg:h-15 lg:py-2'
+              alt='Worldseafood'
             />
           </a>
-          <div class="flex mt-4 justify-between sm:mt-0 mx-8">
+          <div class='flex mt-4 justify-between sm:mt-0 mx-8'>
             <a
-              href="https://www.facebook.com/WorldSeafoodIndustry/" target="_blank"
-              class="text-gray-100 hover:text-gray-900 dark:hover:text-white"
+              href='https://www.facebook.com/WorldSeafoodIndustry/'
+              target='_blank'
+              class='text-gray-100 hover:text-gray-900 dark:hover:text-white'
             >
-              <img src="/img/facebook.webp" alt="" width="30px">
-                <path
-                  fill-rule="evenodd"
-                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span class="sr-only">Facebook page</span>
+              <img src='/img/facebook.webp' alt='' width='30px' />
+
+              <span class='sr-only'>Facebook page</span>
             </a>
             <a
-            href="https://www.instagram.com/worldseafoodin/" target="_blank"
-            class="text-gray-100 hover:text-gray-900 dark:hover:text-white"
+              href='https://www.instagram.com/worldseafoodin/'
+              target='_blank'
+              class='text-gray-100 hover:text-gray-900 dark:hover:text-white'
             >
-            <img src="/img/instagram.webp" alt="" width="30px">
-              <path
-                fill-rule="evenodd"
-                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Facebook page</span>
+              <img src='/img/instagram.webp' alt='' width='30px' />
+
+              <span class='sr-only'>Facebook page</span>
             </a>
             <a
-            href="https://www.linkedin.com/company/world-seafood-industry/" target="_blank"
-            class="text-gray-100 hover:text-gray-900 dark:hover:text-white"
+              href='https://www.linkedin.com/company/world-seafood-industry/'
+              target='_blank'
+              class='text-gray-100 hover:text-gray-900 dark:hover:text-white'
             >
-          <img src="/img/linkedin.webp" alt="" width="30px">
-            <path
-              fill-rule="evenodd"
-              d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-              clip-rule="evenodd"></path>
-          </svg>
-          <span class="sr-only">Facebook page</span>
+              <img src='/img/linkedin.webp' alt='' width='30px' />
+
+              <span class='sr-only'>Facebook page</span>
             </a>
-        </div>
-        </div>
-      </div>
-      <div class=" lg:w-1/4">
-        <div class="lg:flex">
-            <div class="grid lg:text-left text-center">
-              <address>
-                <h3 class="text-xl text-white font-bold mb-2">World Seafood México 2024</h3>
-                <p class="text-white" set:html={t("footer.event_date")} />
-              </address>
-              <address>
-                <p class="text-xl font-medium text-white pt-4 mb-2">{t("footer.title")}</p>
-                <p class="text-white flex lg:justify-start justify-center">
-                  <svg
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    ><path
-                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                    ></path><path
-                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                    ></path>
-                  </svg>
-                  <a class="ps-2 hover:underline" href="mailto:infoagrotechwsi@igeco.mx	">
-                    infoagrotechwsi@igeco.mx</a
-                  >
-                </p>
-                <p class="text-white flex lg:justify-start justify-center">
-                  <svg
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                      clip-rule="evenodd"
-                    >
-                    </path>
-                  </svg> +52 55 7028 3335
-                </p>
-              </address>
-            </div>
-        </div>
-      </div>
-      <div class=" lg:w-1/2 lg:ps-16">
-          <!-- FORMULARIO PARA BOLETIN -->
-          <div class=" lg:w-2/3">
-            <Suscribe
-              description={t('footer.description_suscribe')}
-              suscribe_label={t('footer.suscribe_label')}
-              button={t('footer.suscribe_button')}
-              client:only
-            />
           </div>
+        </div>
+      </div>
+      <div class='lg:w-1/4'>
+        <div class='lg:flex'>
+          <div class='grid lg:text-left text-center'>
+            <address>
+              <h3 class='text-xl text-white font-bold mb-2'>
+                World Seafood México
+              </h3>
+              {/* <p class='text-white' set:html={t('footer.event_date')} />*/}
+            </address>
+            <address>
+              <p class='text-xl font-medium text-white pt-4 mb-2'>
+                {t('footer.title')}
+              </p>
+              <p class='text-white flex lg:justify-start justify-center'>
+                <svg
+                  fill='currentColor'
+                  viewBox='0 0 20 20'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='20'
+                  ><path
+                    d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z'
+                  ></path><path
+                    d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z'
+                  ></path>
+                </svg>
+                <a
+                  class='ps-2 hover:underline'
+                  href='mailto:infoagrotechwsi@igeco.mx	'
+                >
+                  infoagrotechwsi@igeco.mx</a
+                >
+              </p>
+              <p class='text-white flex lg:justify-start justify-center'>
+                <svg
+                  fill='currentColor'
+                  viewBox='0 0 20 20'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='20'
+                >
+                  <path
+                    fill-rule='evenodd'
+                    d='M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z'
+                    clip-rule='evenodd'
+                  >
+                  </path>
+                </svg> +52 55 7028 3335
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class='lg:w-1/2 lg:ps-16'>
+        <!-- FORMULARIO PARA BOLETIN -->
+        <div class='lg:w-2/3'>
+          <Suscribe
+            description={t('footer.description_suscribe')}
+            suscribe_label={t('footer.suscribe_label')}
+            button={t('footer.suscribe_button')}
+            client:only
+          />
+        </div>
       </div>
     </div>
-    <hr class="my-4 border-white sm:mx-auto lg:my-8" />
-    <div class="flex flex-wrap w-full lg:justify-between justify-center">
-      <div class="order-1">
-        <span class="text-xl text-gray-100 text-center dark:text-gray-100">
-          <a href="https://igeco.mx/aviso-de-privacidad" target="_blank" class="hover:underline"
-          >{t("footer.privacy_policy")}</a
-        > | <a href={`${base}/contact`} class="hover:underline"
-        >{t("footer.contact")}</a>
-      </span>
+    <hr class='my-4 border-white sm:mx-auto lg:my-8' />
+    <div class='flex flex-wrap w-full lg:justify-between justify-center'>
+      <div class='order-1'>
+        <span class='text-xl text-gray-100 text-center dark:text-gray-100'>
+          <a
+            href='https://igeco.mx/aviso-de-privacidad'
+            target='_blank'
+            class='hover:underline'>{t('footer.privacy_policy')}</a
+          > | <a href={`${base}/contact`} class='hover:underline'
+            >{t('footer.contact')}</a
+          >
+        </span>
       </div>
-      <div class="flex items-center lg:order-2 order-1 button-language mx-10 lg:my-0 my-4">
+      <div
+        class='flex items-center lg:order-2 order-1 button-language mx-10 lg:my-0 my-4'
+      >
         {
-          i18next.language === "en" ? (
+          i18next.language === 'en' ? (
             <img
-              src="/img/flag-us.svg"
-              alt="us flag"
-              class="h-6 w-6 rounded-full mr-2"
+              src='/img/flag-us.svg'
+              alt='us flag'
+              class='h-6 w-6 rounded-full mr-2'
             />
           ) : (
             <img
-              src="/img/flag-mexico.svg"
-              alt="México flag"
-              class="h-6 w-6 rounded-full mr-2"
+              src='/img/flag-mexico.svg'
+              alt='México flag'
+              class='h-6 w-6 rounded-full mr-2'
             />
           )
         }
         <LanguageSelector
           showFlag={true}
-          aria-label="Select language"
-          class="block w-full p-2.5 rounded-lg bg-grey-200 border-grey-800  hover:bg-gray-100 text-black"
+          aria-label='Select language'
+          class='block w-full p-2.5 rounded-lg bg-grey-200 border-grey-800 hover:bg-gray-100 text-black'
         />
+      </div>
     </div>
   </div>
+  <style>
+    .background {
+      background-image: url('/worldseafood/img/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: auto;
+    }
+  </style>
 </footer>
-<style>
-  .background {
-    background-image: url("/worldseafood/img/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: auto;
-  }
-</style>
