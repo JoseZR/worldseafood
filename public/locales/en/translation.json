@@ -1,6 +1,6 @@
 {
     "site": {
-      "title": "World Seafood Industry 2024",
+      "title": "World Seafood Industry ",
       "description": "World Seafood Industry will be a showcase for wholesalers and retailers in various segments, such as systems and technology, as well as fishing and aquaculture equipment."
     },
     "tab-title":{
@@ -30,9 +30,9 @@
               "option2":"Exhibitor profile",
               "option3":"Why exhibit",
               "option4":"Services to exhibitors",
-              "option5":"Factsheet WSI 2024",
-              "option6":"Floor Plan WSI 2024",
-              "option7":"WSI Contract 2024",
+              "option5":"Factsheet WSI ",
+              "option6":"Floor Plan WSI ",
+              "option7":"WSI Contract ",
               "option8":"Rates",               
               "option9":"Toolkit",
               "option10":"Special Hotel Rates"
@@ -41,12 +41,12 @@
       "option3":{
           "title":"VISITORS",
           "subMenu":{
-              "option1":"Why go to WSI 2024",
+              "option1":"Why go to WSI ",
               "option2":"Visitor Profile"
           }
       },
       "gallery": "GALLERY",
-      "event_date" : "May 15 to 17 2024 | Expo Guadalajara Jalisco"    
+      "event_date" : "May 15 to 17  | Expo Guadalajara Jalisco"    
     },
     "home": {
       "title": "WORLD SEAFOOD INDUSTRY MÉXICO",
@@ -70,10 +70,10 @@
       "gold_partners":"Gold Media Partners",
       "exhibitors":"EXHIBITORS",
       "about_fair":"International Fisheries and Aquaculture Exposition in Mexico.",
-      "event_date":"May 15 to 17 2024 | Expo Guadalajara Jalisco",
+      "event_date":"May 15 to 17  | Expo Guadalajara Jalisco",
       "aftershow_report":"Aftershow Report 2023",
-      "contract":"Contract WSI 2024",
-      "floor_plan":"Floor Plan 2024",
+      "contract":"Contract WSI ",
+      "floor_plan":"Floor Plan ",
       "organized_by": "Organized by",
       "topic1":{
         "title":"WHY EXHIBIT",
@@ -99,11 +99,11 @@
       "description3":"World Seafood Industry, presented by Italian German Exhibition Company Mexico, is the exhibition designed to show the latest trends and the most innovative solutions, as well as facilitating access to technologies that will be key to ensuring greater efficiency and safety in one of the industries that will become more powerful and relevant in the coming years.",
       "description4":"In its second edition, from 15 to 17 May, at Expo Guadalajara, WSI will serve as a showcase for major wholesalers and retailers in different segments including: systems and technology, fishing equipment, aquaculture, food preparation and packaging processes, distribution and logistics, sea products for wholesale, as well as sustainability and general services.",
       "invitation1":"¡WE EXPECT YOU IN",
-      "invitation2":"WORLD SEAFOOD INDUSTRY 2024!"
+      "invitation2":"WORLD SEAFOOD INDUSTRY !"
     },
     "contact":{
       "title":"Contact",
-      "description":"To know more about WorldSeafood 2024, contact us!",
+      "description":"To know more about WorldSeafood , contact us!",
         "form":{
           "name":"Name",
           "email":"Your email",
@@ -181,7 +181,7 @@
       "button":"Read more"
     },
     "rates":{
-      "title":"Rates for World Seafood Industry 2024",
+      "title":"Rates for World Seafood Industry ",
       "topic1": {
         "title":"Raw Space",
         "price":"From 18 m2 MXN 2,950.00 m2 + VAT"
@@ -218,7 +218,7 @@
     },
     "footer":{
         "title": "Sales Contact",
-        "event_date": "May 15 to 17 2024 <br />Expo Guadalajara Jalisco",
+        "event_date": "May 15 to 17  <br />Expo Guadalajara Jalisco",
         "privacy_policy": "Privacy Policy",
         "contact": "Contact",
         "description_suscribe":" Join the marine innovation at WorldSeafood. Learn about the latest trends in fishing and aquaculture to optimize your business. Connect with leaders and update your knowledge.",
@@ -246,7 +246,7 @@
     },
     "about_expo_guadalajara": "Expo Guadalajara is the most dynamic, versatile and important convention and exhibition center in the country and with a projection in Latin America. It is the ideal space to meet the demands of any exhibition, conference or event.<br /><br />It offers 32 spaces with the possibility of modularizing 57 rooms for all types of events; distributed on two levels that include 15 large entrances to the exhibition floor, functional lobbies that allow traffic of up to 60,000 people daily, a forum for musical, cultural and social events and an Open Expo for sporting events, outdoor exhibitions and concerts. In addition, it has 1,912 parking spaces.<br /><br />It has Internet service through WiFi with a bandwidth ranging from 100 Mbps to 1,000 Mbps and the capacity to support up to 28,000 concurrent connections in the facility. .<br /><br />Expo Guadalajara is the only fairground in Mexico with its own foundation, the result of its commitment to society.<br /><br />Expo Guadalajara Foundation fulfills two primary objectives: promoting social development in Jalisco and promote the CSR (Corporate Social Responsibility) culture.",
   "why-attend":{
-    "title":"10 reasons to attend WSI 2024",
+    "title":"10 reasons to attend WSI ",
     "description1":"<strong class='text-violet-700'>World Seafood Industry </strong> will bring together the region’s experts in the fisheries and aquaculture sector, opening opportunities to exchange innovations, ideas, and close deals. In 3 days of trade show, combined with an extensive educational program and social events, you will have the opportunity to meet with industry leaders and gain regional and international expertise.",
     "item1":"<strong class='text-violet-700'>Discover innovations</strong> in fisheries and aquaculture technologies on the exhibition floor.",
 

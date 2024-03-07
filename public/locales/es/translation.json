@@ -1,6 +1,6 @@
 {
     "site": {
-      "title": "World Seafood Industry 2024",
+      "title": "World Seafood Industry ",
       "description": "World Seafood Industry será un destacado escaparate para mayoristas y minoristas en diversos segmentos, como sistemas y tecnología, así como equipos de pesca y acuicultura."
     },
     "tab-title":{
@@ -30,9 +30,9 @@
               "option2":"Perfil de Expositor",
               "option3":"Por qué exponer",
               "option4":"Servicios a expositores",
-              "option5":"Factsheet WSI 2024",
-              "option6":"Plano WSI 2024",
-              "option7":"Contrato WSI 2024",
+              "option5":"Factsheet WSI ",
+              "option6":"Plano WSI ",
+              "option7":"Contrato WSI ",
               "option8":"Tarifas",               
               "option9":"Toolkit",
               "option10":"Tarifas especiales en hoteles"
@@ -41,12 +41,12 @@
       "option3":{
           "title":"VISITANTES",
           "subMenu":{
-              "option1":"Por qué asistir a WSI 2024",
+              "option1":"Por qué asistir a WSI ",
               "option2":"Perfil de visitante"
           }
       },
       "gallery": "GALERÍA",
-      "event_date" : "15 al 17 de mayo 2024 | Expo Guadalajara, Jalisco"
+      "event_date" : "15 al 17 de mayo  | Expo Guadalajara, Jalisco"
     },
     "home": {
       "title": "WORLD SEAFOOD INDUSTRY MÉXICO",
@@ -70,10 +70,10 @@
       "gold_partners":"Gold Media Partners",
       "exhibitors":"EXPOSITORES",
       "about_fair":"Exposición Internacional de Pesca y Acuicultura en México.",
-      "event_date":"15 al 17 de mayo 2024 | Expo Guadalajara, Jalisco ",
+      "event_date":"15 al 17 de mayo  | Expo Guadalajara, Jalisco ",
       "aftershow_report":"Reporte de resultados 2023",
-      "contract":"Contrato WSI 2024",
-      "floor_plan":"Plano 2024",
+      "contract":"Contrato WSI ",
+      "floor_plan":"Plano ",
       "organized_by": "Organizado por",
       "topic1":{
         "title":"POR QUÉ EXPONER",
@@ -99,11 +99,11 @@
       "description3":"World Seafood Industry, presentada por Italian German Exhibition Company Mexico, es la exposición diseñada para mostrar las últimas tendencias y las soluciones más innovadoras, así como facilitar el acceso a las tecnologías que serán clave para garantizar mayor eficiencia y seguridad en una de las industrias que cobrará mayor fuerza y relevancia en los próximos años.",
       "description4":"En su segunda edición, del 15 al 17 de mayo, en Expo Guadalajara, WSI servirá como escaparate para los principales mayoristas y minoristas en distintos segmentos incluyendo: sistemas y tecnología, equipos de pesca, acuicultura, procesos de preparación y envasado de alimentos, distribución y logística, productos del mar para mayoreo, así como sostenibilidad y servicios generales.",
       "invitation1":"¡LOS ESPERAMOS EN",
-      "invitation2":"WORLD SEAFOOD INDUSTRY 2024!"
+      "invitation2":"WORLD SEAFOOD INDUSTRY !"
     },
     "contact":{
       "title":"Contacto",
-      "description":"Para saber más sobre WorldSeafood 2024, contáctenos!",
+      "description":"Para saber más sobre WorldSeafood , contáctenos!",
         "form":{
           "name":"Nombre",
           "email":"Correo electrónico",
@@ -181,7 +181,7 @@
       "button":"Leer más"
     },
     "rates":{
-      "title":"Tarifas para World Seafood Industry 2024",
+      "title":"Tarifas para World Seafood Industry ",
       "topic1": {
         "title":"Espacio libre",
         "price":"A partir de 18 m2 MXN 2,950.00 m2 + IVA"
@@ -219,7 +219,7 @@
     },
     "footer":{
       "title": "Contacto de Ventas",
-      "event_date": "15 al 17 de mayo 2024 <br />Expo Guadalajara Jalisco",
+      "event_date": "15 al 17 de mayo  <br />Expo Guadalajara Jalisco",
       "privacy_policy": "Privacy Policy",
       "contact": "Contacto",
       "description_suscribe":"Únete a la innovación marina en WorldSeafood. Conoce las últimas tendencias en pesca y acuicultura para optimizar tu negocio. Conecta con líderes y actualiza tu conocimiento del sector.",
@@ -247,7 +247,7 @@
     },
     "about_expo_guadalajara": "Expo Guadalajara es el centro de convenciones y exposiciones más dinámico, versátil e importante del país y con una proyección en Latinoamérica. Es el espacio ideal para cumplir las exigencias de cualquier exposición, congreso o evento.<br /><br />Ofrece 32 espacios con la posibilidad de modular a 57 salones para todo tipo de eventos; distribuidos en dos niveles que incluyen 15 amplios accesos al piso de exhibición, funcionales vestíbulos que permiten el tráfico de hasta 60,000 personas diarias, un foro para eventos musicales, culturales y sociales y una Expo Abierta para eventos deportivos, exposiciones al aire libre y conciertos. Además, cuenta con 1,912 cajones de estacionamiento.<br /><br />Cuenta con servicio de Internet por medio de WiFi con un ancho de banda que va desde 100 Mbps hasta 1,000 Mbps y capacidad para soportar hasta 28,000 conexiones concurrentes en el recinto.<br /><br />Expo Guadalajara es el único recinto ferial en México con fundación propia, resultado de su compromiso con la sociedad.<br /><br />Fundación Expo Guadalajara cumple dos objetivos primordiales: impulsar el desarrollo social en Jalisco y fomentar la cultura RSE (Responsabilidad Social Empresarial).",
     "why-attend":{
-      "title":"10 razones para asistir a WSI2024",
+      "title":"10 razones para asistir a WSI",
       "description1":"<strong class='text-violet-700'>World Seafood Industry </strong> reunirá a los expertos en el sector pesquero y acuícola de la región, abriendo oportunidades para intercambiar innovaciones, ideas y cerrar negocios. En 3 días de feria comercial, combinado con un extenso programa educativo y eventos sociales, usted tendrá la oportunidad de encontrarse con los líderes de la industria y poder adquirir conocimiento especializado tanto regional como internacional.",
       "item1":"<strong class='text-violet-700'>Descubra las innovaciones en tecnologías</strong> para la pesca y la acuicultura en el piso de exhibición.",
       "item2":"<strong class='text-violet-700'>Visite la primera plataforma B2B</strong> dirigida a la industria de la pesca y la acuicultura en México.",
